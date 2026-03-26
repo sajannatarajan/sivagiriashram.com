@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temples & Sacred Places | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.temple-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 2rem; transition: transform 0.3s, box-shadow 0.3s; }
+.temple-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(218,165,32,0.15); }
+.temple-header { background: linear-gradient(135deg, rgba(139,90,43,0.3), rgba(218,165,32,0.2)); padding: 2rem; }
+.temple-header h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.4rem; margin-bottom: 0.3rem; }
+.temple-header .temple-ml { font-family: 'Noto Sans Malayalam', sans-serif; color: var(--saffron); font-size: 1rem; }
+.temple-header .temple-location { color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem; }
+.temple-body { padding: 2rem; }
+.temple-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.temple-tag { padding: 0.3rem 0.8rem; background: rgba(218,165,32,0.1); border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-muted); }
+.temple-tag.highlight { background: rgba(218,165,32,0.2); color: var(--gold); border-color: var(--gold); }
+.temple-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.sacred-place { background: linear-gradient(135deg, var(--surface), rgba(139,90,43,0.1)); border: 1px solid var(--border); border-radius: 12px; padding: 1.8rem; }
+.sacred-place h4 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.1rem; margin-bottom: 0.8rem; }
+.map-placeholder { background: linear-gradient(135deg, rgba(139,90,43,0.2), rgba(218,165,32,0.1)); border: 1px solid var(--border); border-radius: 10px; padding: 3rem 2rem; text-align: center; margin: 2rem 0; }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html" class="active">Temples</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">Sacred Spaces</p>
+    <h1 class="page-title">Temples & Sacred Places</h1>
+    <p class="hero-desc">The holy sites consecrated by Sree Narayana Guru — open to all humanity</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <h2 class="section-title">The Revolutionary Consecrations</h2>
+      <p class="section-subtitle">Guru consecrated temples open to all — a radical act that transformed Kerala society</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(218,165,32,0.1), rgba(139,90,43,0.15)); border: 1px solid var(--gold); border-radius: 12px; padding: 2rem; margin-bottom: 2rem;" class="fade-in">
+      <p>In 19th-century Kerala, lower-caste Hindus were barred from entering temples. Sree Narayana Guru broke this oppression by consecrating temples himself — without Brahmin priests — and declaring them open to all people, regardless of caste.</p>
+      <p style="margin-top:1rem;">He consecrated over <strong>60 temples</strong> across Kerala, installing deities of different traditions — Shiva, Vishnu, Devi, Saraswati — but always with the same message: this temple belongs to all humanity. God does not discriminate.</p>
+    </div>
+
+    <!-- Sivagiri Mutt -->
+    <div class="temple-card fade-in">
+      <div class="temple-header">
+        <h3>Sivagiri Mutt & Sarada Mutt</h3>
+        <div class="temple-ml">ശിവഗിരി മഠം</div>
+        <div class="temple-location">📍 Varkala, Thiruvananthapuram District, Kerala</div>
+      </div>
+      <div class="temple-body">
+        <div class="temple-meta">
+          <span class="temple-tag highlight">Mahasamadhi Shrine</span>
+          <span class="temple-tag highlight">Pilgrimage Site</span>
+          <span class="temple-tag">Founded 1904</span>
+          <span class="temple-tag">Deity: Sarada Devi</span>
+        </div>
+        <p>Sivagiri Mutt in Varkala is the most sacred site associated with Sree Narayana Guru — the place of his final abode and Mahasamadhi (conscious departure from the body, 1928). It is the spiritual headquarters of the Sree Narayana movement worldwide.</p>
+        <p style="margin-top:1rem;">The Mutt houses the <strong>Sarada Mutt</strong>, dedicated to Sarada Devi (the goddess of knowledge). It also contains Guru's samadhi shrine, where devotees come to pay their respects and receive blessings.</p>
+        <p style="margin-top:1rem;">The annual <strong>Sivagiri Pilgrimage</strong> (Sivagiri Teertha Yatra), inaugurated by Guru himself in 1904, draws hundreds of thousands of pilgrims every December 30–January 1.</p>
+        <div style="background: rgba(218,165,32,0.1); border-radius:8px; padding:1rem; margin-top:1rem;">
+          <strong style="color:var(--gold);">Pilgrimage Information:</strong>
+          <ul style="color:var(--text-muted); font-size:0.9rem; margin-top:0.5rem; list-style:disc; padding-left:1.5rem;">
+            <li>Annual pilgrimage: December 30 – January 1</li>
+            <li>Nearest railway station: Varkala Sivagiri (SNCF)</li>
+            <li>Temple open to all faiths</li>
+            <li>Prasadam distributed daily</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aruvippuram Temple -->
+    <div class="temple-card fade-in">
+      <div class="temple-header">
+        <h3>Aruvippuram Shiva Temple</h3>
+        <div class="temple-ml">അരുവിപ്പുറം ക്ഷേത്രം</div>
+        <div class="temple-location">📍 Aruvippuram, Neyyattinkara, Thiruvananthapuram</div>
+      </div>
+      <div class="temple-body">
+        <div class="temple-meta">
+          <span class="temple-tag highlight">First Consecration — 1888</span>
+          <span class="temple-tag highlight">Historic Site</span>
+          <span class="temple-tag">Deity: Shiva</span>
+        </div>
+        <p>Aruvippuram holds the most historic significance of all sites associated with Sree Narayana Guru. It was here, on the banks of the Neyyar river, that Guru performed his first temple consecration in 1888 — the consecration that changed Kerala's history.</p>
+        <p style="margin-top:1rem;">Guru consecrated the Shiva idol by himself, without Brahmin priests, and declared: <em>"This is not the Brahmin's Shiva — this is the Shiva of all people."</em> It was the first time in Kerala's history that a non-Brahmin had consecrated a Shiva temple.</p>
+        <p style="margin-top:1rem;">The consecration sparked what became known as the <strong>Aruvippuram Declaration</strong> — a proclamation that lower-caste Hindus had the same right to worship as any other Hindu. This event galvanised Kerala's social reform movement.</p>
+        <div style="background: rgba(218,165,32,0.1); border-radius:8px; padding:1rem; margin-top:1rem;">
+          <strong style="color:var(--gold);">Shivratri Festival:</strong> The annual Shivratri festival at Aruvippuram is celebrated with special poojas, recitations, and a re-enactment of the historic consecration ceremony.
+        </div>
+      </div>
+    </div>
+
+    <!-- Kalavankode Mutt -->
+    <div class="temple-card fade-in">
+      <div class="temple-header">
+        <h3>Kalavankode Sree Narayana Mutt</h3>
+        <div class="temple-ml">കളവൻകോഡ് മഠം</div>
+        <div class="temple-location">📍 Kalavankode, Thiruvananthapuram</div>
+      </div>
+      <div class="temple-body">
+        <div class="temple-meta">
+          <span class="temple-tag">Mutt</span>
+          <span class="temple-tag">Educational Institution</span>
+          <span class="temple-tag">Welfare Centre</span>
+        </div>
+        <p>Kalavankode Mutt was one of the first institutions established under Guru's direct guidance. It served as a centre for spiritual practice, education, and social welfare — embodying Guru's vision of the integration of spiritual and social development.</p>
+      </div>
+    </div>
+
+    <!-- Thycaud Ayya Temple -->
+    <div class="temple-card fade-in">
+      <div class="temple-header">
+        <h3>Kalavilakom Sree Narayana Guru Smarakam</h3>
+        <div class="temple-ml">ഗുരു സ്മാരകം</div>
+        <div class="temple-location">📍 Thiruvananthapuram, Kerala</div>
+      </div>
+      <div class="temple-body">
+        <div class="temple-meta">
+          <span class="temple-tag">Memorial</span>
+          <span class="temple-tag">Museum</span>
+          <span class="temple-tag">Research Centre</span>
+        </div>
+        <p>This memorial and research centre is dedicated to preserving and propagating the life, teachings, and works of Sree Narayana Guru. It houses a museum with artefacts, photographs, and manuscripts from Guru's life.</p>
+      </div>
+    </div>
+
+    <!-- Mirror Temple -->
+    <div class="temple-card fade-in">
+      <div class="temple-header">
+        <h3>The Mirror Temple — Murukkumpuzha</h3>
+        <div class="temple-ml">ദർപ്പണ ക്ഷേത്രം</div>
+        <div class="temple-location">📍 Murukkumpuzha, Thiruvananthapuram</div>
+      </div>
+      <div class="temple-body">
+        <div class="temple-meta">
+          <span class="temple-tag highlight">Unique — Mirror Idol</span>
+          <span class="temple-tag">Philosophical Teaching</span>
+        </div>
+        <p>In one of his most profound and enigmatic acts, Guru consecrated a temple where instead of a conventional idol, he installed a large mirror. The inscription read: <em>"ഇവിടെ ദൈവദർശനം"</em> — "Here, behold the vision of God."</p>
+        <p style="margin-top:1rem;">When worshippers looked into the mirror, they saw themselves. The teaching was immediate and inescapable: the divine you seek is your own true nature. This was Advaita philosophy made directly experiential — the most radical form of worship possible.</p>
+      </div>
+    </div>
+
+    <!-- Temples in Tamil Nadu -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Temples Across South India</h2>
+    </div>
+
+    <div class="temple-grid fade-in">
+      <div class="sacred-place">
+        <h4>Maruthvamala Temple</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Maruthvamala Hills, Thiruvananthapuram</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">One of Guru's most important tapas (ascetic practice) sites. He spent years here in deep meditation before returning to public life as a reformer. A temple now marks the site of his prolonged solitary meditation.</p>
+      </div>
+      <div class="sacred-place">
+        <h4>Thrissur Advaita Ashram</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Thrissur, Kerala</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">An ashram founded under Guru's influence, dedicated to Advaita Vedanta practice and social service. Guru visited here and gave discourses that shaped the local reform movement.</p>
+      </div>
+      <div class="sacred-place">
+        <h4>Kanyakumari Mutt</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Kanyakumari, Tamil Nadu</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">At the southernmost tip of India, where three seas meet, Guru's influence extended into Tamil Nadu. The Kanyakumari Mutt carries his legacy of open worship and social equality.</p>
+      </div>
+      <div class="sacred-place">
+        <h4>Mangalore Sree Narayana Temple</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Mangalore, Karnataka</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Guru's influence reached Karnataka, and several temples in the Tulu Nadu region carry his vision of open, caste-free worship open to all.</p>
+      </div>
+      <div class="sacred-place">
+        <h4>Vadakara Sree Narayana Dharma Paripalana Temple</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Vadakara, Kozhikode</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">One of the major SNDP-affiliated temples in northern Kerala, continuing Guru's mission of universal worship and social equality in the Malabar region.</p>
+      </div>
+      <div class="sacred-place">
+        <h4>Alathur Sree Narayana Mission Temple</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:0.8rem;">📍 Alathur, Palakkad</p>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Central Kerala's Narayana Guru temple, serving as a centre for education, social welfare, and continued propagation of Guru's message of human equality.</p>
+      </div>
+    </div>
+
+    <!-- SNDP and Institutions -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Institutions Founded</h2>
+      <p class="section-subtitle">Temples, Mutts, Schools, Hospitals — Guru's vision made concrete</p>
+    </div>
+
+    <div class="phil-card fade-in" style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+      <h3 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:1rem;">Sree Narayana Dharma Paripalana Yogam (SNDP)</h3>
+      <p>Founded in 1903 with Guru's blessings, the SNDP Yogam was the organisational vehicle for Guru's social mission. It grew to become one of the largest and most powerful social organisations in Kerala, fighting against caste discrimination and promoting education, welfare, and equality.</p>
+      <p style="margin-top:1rem;">Today the SNDP oversees hundreds of temples, schools, colleges, hospitals, and welfare organisations across Kerala and the Kerala diaspora worldwide.</p>
+    </div>
+
+    <div class="phil-card fade-in" style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+      <h3 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:1rem;">Educational Institutions</h3>
+      <p>Guru established or inspired the founding of dozens of schools and educational centres for communities that had been denied education under the caste system. His schools were among the first in Kerala to admit students of all castes and social backgrounds.</p>
+      <p style="margin-top:1rem;">The educational movement he started contributed directly to Kerala achieving near-universal literacy — one of the highest literacy rates in the developing world.</p>
+    </div>
+
+    <!-- Visiting Information -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Visiting Sivagiri Mutt</h2>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:1.5rem;" class="fade-in">
+      <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem;">
+        <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.8rem;">🕐 Temple Hours</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Morning: 5:00 AM – 12:00 PM<br>Evening: 4:00 PM – 8:00 PM<br>Daily Prasadam distributed</p>
+      </div>
+      <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem;">
+        <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.8rem;">🚂 How to Reach</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Train: Varkala Sivagiri Station (SNCF)<br>Road: 45 km from Thiruvananthapuram<br>Bus: Regular KSRTC services from TVM</p>
+      </div>
+      <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem;">
+        <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.8rem;">🙏 Pilgrimage</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Annual Sivagiri Yatra: Dec 30 – Jan 1<br>Open to all faiths<br>Dress code: Traditional/modest attire</p>
+      </div>
+      <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.5rem;">
+        <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.8rem;">📞 Contact</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Sivagiri Mutt, Varkala<br>Thiruvananthapuram – 695 145<br>Kerala, India</p>
+      </div>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="festivals.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎊</span>
+          <h4>Festivals</h4>
+          <p>Guru Jayanti & Sivagiri Pilgrimage</p>
+        </div>
+      </a>
+      <a href="poojas.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🪔</span>
+          <h4>Poojas</h4>
+          <p>Daily worship & rituals</p>
+        </div>
+      </a>
+      <a href="biography.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">📖</span>
+          <h4>Biography</h4>
+          <p>Life of Sree Narayana Guru</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

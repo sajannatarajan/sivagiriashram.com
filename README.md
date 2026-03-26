@@ -1,42 +1,138 @@
-# Sivagiri Ashram Website
+# Sivagiri Ashram — Sree Narayana Guru Website
 
-This is a static website for `sivagiriashram.com`, focused on Sivagiri Mutt, Varkala, the life and teachings of Sree Narayana Guru, a simple online catalog for books and t-shirts, and a searchable krithis library with YouTube links.
+A comprehensive, multi-page static website dedicated to **Sree Narayana Guru** (1856–1928), the great Kerala saint, philosopher, and social reformer.
 
-## Files
+🌐 **Live Site:** [sivagiriashram.com](https://sivagiriashram.com)
 
-- `index.html` - page structure and content
-- `styles.css` - visual design and responsive layout
-- `app.js` - teachings, store catalog, and krithis data
+---
 
-## Run locally
+## Pages
 
-You can open `index.html` directly in a browser, or serve the folder with a lightweight static server:
+| Page | Description |
+|------|-------------|
+| `index.html` | Homepage — hero, navigation grid, featured works, daily quote |
+| `pages/biography.html` | Full biography with timeline (1856–1928) |
+| `pages/teachings.html` | Core teachings in English, Malayalam, Tamil, Hindi |
+| `pages/philosophy.html` | Advaita Vedanta philosophy & Ten Darsanas overview |
+| `pages/atmopadesa-satakam.html` | 100 Verses of Self-Instruction with translations |
+| `pages/darsanamala.html` | All 10 Darsanas with Sanskrit verses & translations |
+| `pages/kritis.html` | Complete works — devotional, philosophical, social |
+| `pages/poojas.html` | Daily worship, Guru Pooja, mantras in 4 languages |
+| `pages/temples.html` | Sivagiri Mutt, Aruvippuram, and major temples |
+| `pages/festivals.html` | Sivagiri Pilgrimage, Guru Jayanti, observances |
+| `pages/quotes.html` | Filterable quotes by category and language |
+| `pages/gallery.html` | Visual tribute — photos and pilgrimage |
+| `pages/languages.html` | Teachings in Malayalam, Tamil, Sanskrit, Hindi, Kannada |
 
-```powershell
-python -m http.server 8080
+---
+
+## Deployment — GitHub Pages
+
+### Step 1: Create a GitHub Repository
+
+1. Go to [github.com](https://github.com) and sign in
+2. Click **New repository**
+3. Name it exactly: `sivagiriashram.com` (or any name you prefer)
+4. Set visibility to **Public**
+5. Click **Create repository**
+
+### Step 2: Upload Files
+
+**Option A — GitHub Web Interface (simplest):**
+1. Open your repository
+2. Click **Add file → Upload files**
+3. Drag and drop ALL files and folders from this project
+4. Click **Commit changes**
+
+**Option B — Git command line:**
+```bash
+cd sivagiriashram
+git init
+git add .
+git commit -m "Initial commit — Sree Narayana Guru website"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git push -u origin main
 ```
 
-Then open `http://localhost:8080`.
+### Step 3: Enable GitHub Pages
 
-## Publish on GoDaddy hosting
+1. In your repository, go to **Settings → Pages**
+2. Under **Source**, select **Deploy from a branch**
+3. Choose branch: `main`, folder: `/ (root)`
+4. Click **Save**
+5. GitHub will show your site URL (e.g., `https://yourusername.github.io/repo-name`)
 
-If you have GoDaddy Web Hosting or cPanel hosting attached to the domain:
+### Step 4: Connect Custom Domain (sivagiriashram.com)
 
-1. Sign in to GoDaddy and open the hosting dashboard for `sivagiriashram.com`.
-2. Open File Manager or connect with FTP/SFTP.
-3. Upload `index.html`, `styles.css`, and `app.js` into `public_html`.
-4. If there is an old `index.html`, back it up first.
-5. Visit `https://sivagiriashram.com` and confirm the site is loading.
+The `CNAME` file in this project already contains `sivagiriashram.com`.
 
-## Important follow-up items
+In **GitHub Pages Settings**, under **Custom domain**, enter:
+```
+sivagiriashram.com
+```
+Click Save. GitHub will verify the domain.
 
-- Replace the placeholder store email addresses with real domain email accounts.
-- Add real product images for books and t-shirts.
-- If you want online payment, connect a checkout provider such as Razorpay, Shopify, or WooCommerce.
-- If you want exact curated performance videos instead of YouTube search links, replace the generated links in `app.js` with chosen video URLs.
+---
 
-## Content references used for this build
+## GoDaddy DNS Configuration
 
-- Sivagiri mission and public information: `https://www.sivagiri.com/sreenarayanadharmam`
-- Works list: `https://www.keralatourism.org/varkala/sree-narayana-guru--works.php`
-- General background on the Guru and selected works: `https://en.wikipedia.org/wiki/Narayana_Guru`
+Log into your GoDaddy account → DNS Management for `sivagiriashram.com`
+
+### Add these A Records (IPv4):
+
+| Type | Name | Value | TTL |
+|------|------|-------|-----|
+| A | @ | 185.199.108.153 | 600 |
+| A | @ | 185.199.109.153 | 600 |
+| A | @ | 185.199.110.153 | 600 |
+| A | @ | 185.199.111.153 | 600 |
+
+### Add CNAME Record (for www):
+
+| Type | Name | Value | TTL |
+|------|------|-------|-----|
+| CNAME | www | YOUR_USERNAME.github.io | 3600 |
+
+> **Note:** DNS changes can take up to 24–48 hours to propagate worldwide. After propagation, enable **Enforce HTTPS** in GitHub Pages settings for a secure connection.
+
+---
+
+## Adding Real Content
+
+### Audio Files
+Place MP3 files in an `/audio/` folder. The site is wired to play:
+- Verses from Atmopadesa Satakam
+- Darsanamala chants
+- Pooja mantras
+
+### Images
+Place images in an `/images/` folder and update `gallery.html` with real `<img>` tags.
+
+### Fonts
+The site uses Google Fonts (loaded via CDN):
+- **Cinzel** — display headings
+- **Cormorant Garamond** — body text
+- **Noto Sans Malayalam / Tamil / Devanagari** — regional scripts
+
+---
+
+## Languages Supported
+
+🇮🇳 Malayalam · Tamil · Hindi · Kannada · Sanskrit · English
+
+---
+
+## Core Message
+
+> **"ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്"**
+> *One Caste, One Religion, One God for Humanity*
+> — Sree Narayana Guru
+
+---
+
+## License
+
+This website is created for spiritual and educational purposes in devotion to Sree Narayana Guru. Content may be freely shared for non-commercial use with attribution.
+
+*Sree Narayana Guru Deva Thiruvadigal Saranam*

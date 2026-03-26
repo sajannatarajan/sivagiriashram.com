@@ -1,175 +1,209 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="description"
-    content="A multilingual digital library inspired by Sree Narayana Guru, featuring original onsite renderings, philosophical verses, devotional hymns, social reform poetry, and browser-generated recitation."
-  >
-  <title>Sivagiri Ashram | Sampoorna Krithikal Library</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sree Narayana Guru — Divine Light of Kerala</title>
+  <meta name="description" content="The most comprehensive resource on Sree Narayana Guru — teachings, kritis, poojas, philosophy in English, Malayalam, Tamil, Hindi, Kannada, and Sanskrit."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <div class="site-aura" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#top">
-      <span class="brand-mark">SA</span>
-      <span class="brand-copy">
-        <strong>Sivagiri Ashram</strong>
-        <small>Sampoorna Krithikal Digital Library</small>
-      </span>
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#vision">Vision</a>
-      <a href="#library">Library</a>
-      <a href="#listening">Listening</a>
-      <a href="#commentaries">Commentaries</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Advaita, equality, devotion, and living wisdom</p>
-        <h1>A contemplative multilingual home for krithis, hymns, verses, and spiritual study.</h1>
-        <p class="hero-text">
-          This edition brings together original onsite renderings inspired by the spirit of Sree Narayana Guru:
-          Malayalam, Sanskrit, Tamil, and English text for study, reflection, chanting, and shared recitation.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#library">Enter the Library</a>
-          <a class="button button-secondary" href="#listening">Listen to Recitations</a>
+<canvas id="particles" aria-hidden="true"></canvas>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand">
+    <div class="nav-om">ॐ</div>
+    <span class="nav-title">Sree Narayana Guru</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/biography.html">Biography</a></li>
+    <li><a href="pages/teachings.html">Teachings</a></li>
+    <li><a href="pages/kritis.html">Kritis</a></li>
+    <li><a href="pages/poojas.html">Poojas</a></li>
+    <li><a href="pages/atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+    <li><a href="pages/darsanamala.html">Darsanamala</a></li>
+    <li><a href="pages/temples.html">Temples</a></li>
+    <li><a href="pages/languages.html">Languages</a></li>
+  </ul>
+</nav>
+<header class="hero" id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-lamp">🪔</div>
+    <p class="hero-sanskrit">ॐ सर्वे भवन्तु सुखिनः</p>
+    <h1 class="hero-title">
+      <span class="title-line1">SREE NARAYANA</span>
+      <span class="title-line2">GURU</span>
+    </h1>
+    <p class="hero-malayalam">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="hero-tagline">One Caste · One Religion · One God for Humanity</p>
+    <p class="hero-dates">1856 – 1928 · Chempazhanthy, Thiruvananthapuram, Kerala</p>
+    <div class="hero-cta">
+      <a href="pages/biography.html" class="btn-primary">Discover His Life</a>
+      <a href="pages/teachings.html" class="btn-secondary">His Teachings</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+</header>
+<section class="stats-bar">
+  <div class="stat-item"><span class="stat-num">100+</span><span class="stat-label">Kritis & Works</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">Languages</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat-item"><span class="stat-num">50+</span><span class="stat-label">Temples Founded</span></div>
+  <div class="stat-divider"></div>
+  <div class="stat-item"><span class="stat-num">1928</span><span class="stat-label">Mahasamadhi</span></div>
+</section>
+<section class="core-message">
+  <div class="container">
+    <div class="message-grid">
+      <div class="message-text">
+        <div class="section-eyebrow">THE ETERNAL TEACHING</div>
+        <h2 class="section-title">One Caste, One Religion,<br/>One God for Humanity</h2>
+        <p class="message-body">Sree Narayana Guru — philosopher, poet, spiritual leader, and social reformer — arose from the soil of Kerala in the 19th century like a divine light. He taught that all human beings are equal, that caste distinctions are artificial, and that the path to liberation lies in knowledge, devotion, and compassionate action.</p>
+        <p class="message-body">His teachings transcend all barriers of religion, language, and community. Through his kritis, philosophical works, and the temples he consecrated, he created a spiritual revolution that transformed Kerala's social fabric and continues to guide millions across the world.</p>
+        <a href="pages/philosophy.html" class="link-arrow">Explore His Philosophy →</a>
+      </div>
+      <div class="message-quote-box">
+        <div class="quote-inner">
+          <div class="quote-mark">"</div>
+          <blockquote class="featured-quote">Whatever be the religion of a man, it is enough that he becomes a good human being.</blockquote>
+          <div class="quote-source">— Sree Narayana Guru</div>
+          <div class="quote-divider"></div>
+          <p class="quote-malayalam">മനുഷ്യൻ നല്ലവനായാൽ മതി, ഏതു മതത്തിലുള്ളവനായാലും.</p>
         </div>
       </div>
-      <aside class="hero-panel">
-        <p class="panel-kicker">Editorial Note</p>
-        <blockquote>
-          One light, many tongues; one truth, many songs.
-        </blockquote>
-        <p>
-          Every text on this website is presented directly on the site. There are no YouTube links, no outbound
-          reading journeys, and no embedded external text libraries.
-        </p>
-        <p class="panel-note">
-          The collection below is written as a devotional and educational digital companion in the Guru's
-          philosophical orbit, with original translations, meditations, and commentarial renderings.
-        </p>
-      </aside>
-    </section>
-
-    <section class="vision-strip" id="vision">
-      <article>
-        <span>Philosophy</span>
-        <h2>Advaita without abstraction</h2>
-        <p>
-          The library returns again and again to non-duality as lived clarity: the self, the world, and the divine
-          are not enemies to each other but doors to one presence.
-        </p>
-      </article>
-      <article>
-        <span>Social Reform</span>
-        <h2>Equality as sacred practice</h2>
-        <p>
-          Anti-caste thought appears here not as a side theme, but as a direct consequence of spiritual insight:
-          if truth is one, human dignity cannot be divided.
-        </p>
-      </article>
-      <article>
-        <span>Devotion</span>
-        <h2>Prayer with tenderness</h2>
-        <p>
-          Hymns, vows, invocations, and contemplative songs are shaped for chanting, inward repetition, and family
-          reading across generations.
-        </p>
-      </article>
-    </section>
-
-    <section class="section library-section" id="library">
-      <div class="section-heading">
-        <p class="eyebrow">Multilingual Library</p>
-        <h2>Sree Narayana Guru inspired Sampoorna Krithikal experience</h2>
-        <p>
-          Browse philosophical verses, devotional hymns, social reform poems, and translation-commentary studies.
-          Select any work to read it in Malayalam, Sanskrit, Tamil, and English.
-        </p>
+    </div>
+  </div>
+</section>
+<section class="nav-cards">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">EXPLORE THE SACRED UNIVERSE</div>
+      <h2 class="section-title">What Would You Like to Discover?</h2>
+    </div>
+    <div class="cards-grid">
+      <a href="pages/biography.html" class="nav-card card-biography"><div class="card-icon">📜</div><h3>Biography</h3><p>Life, miracles, and the divine journey of the Guru — from birth in Chempazhanthy to Mahasamadhi at Varkala.</p><span class="card-arrow">→</span></a>
+      <a href="pages/kritis.html" class="nav-card card-kritis"><div class="card-icon">🎵</div><h3>Kritis & Works</h3><p>Over 100 philosophical poems and kritis in Malayalam, Sanskrit, and Tamil — with translations and audio recitals.</p><span class="card-arrow">→</span></a>
+      <a href="pages/teachings.html" class="nav-card card-teachings"><div class="card-icon">💡</div><h3>Teachings</h3><p>Core philosophy on Advaita, equality, education, and spiritual liberation. Available in 6 languages.</p><span class="card-arrow">→</span></a>
+      <a href="pages/poojas.html" class="nav-card card-poojas"><div class="card-icon">🪔</div><h3>Poojas & Prayers</h3><p>Daily pooja rituals, mantras, slokas with pronunciation guides and recitals for home worship.</p><span class="card-arrow">→</span></a>
+      <a href="pages/atmopadesa-satakam.html" class="nav-card card-atmo"><div class="card-icon">📖</div><h3>Atmopadesa Satakam</h3><p>The 100 verses of Self-Instruction — the crown jewel of Guru's literary and spiritual compositions.</p><span class="card-arrow">→</span></a>
+      <a href="pages/darsanamala.html" class="nav-card card-darsana"><div class="card-icon">🌺</div><h3>Darsanamala</h3><p>The Garland of Visions — ten philosophical hymns presenting Guru's Advaita Vedanta in Sanskrit.</p><span class="card-arrow">→</span></a>
+      <a href="pages/temples.html" class="nav-card card-temples"><div class="card-icon">🏛️</div><h3>Temples & Ashrams</h3><p>Sacred places consecrated by the Guru — Sivagiri Mutt, Aruvippuram, and temples across Kerala.</p><span class="card-arrow">→</span></a>
+      <a href="pages/festivals.html" class="nav-card card-festivals"><div class="card-icon">🌟</div><h3>Festivals</h3><p>Sivagiri Pilgrimage, Guru Jayanti, and sacred celebrations observed by millions worldwide.</p><span class="card-arrow">→</span></a>
+      <a href="pages/languages.html" class="nav-card card-languages"><div class="card-icon">🌐</div><h3>Multilingual Resources</h3><p>Teachings, kritis, and prayers in English, Malayalam, Tamil, Hindi, Kannada, and Sanskrit.</p><span class="card-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+<section class="featured-kritis">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">SACRED COMPOSITIONS</div>
+      <h2 class="section-title">Featured Kritis</h2>
+      <p class="section-sub">Divine poetry that illuminates the path to liberation</p>
+    </div>
+    <div class="kritis-grid">
+      <div class="kriti-card"><div class="kriti-header"><span class="kriti-lang">Malayalam</span><span class="kriti-tag">Most Beloved</span></div><h3 class="kriti-title">Anukampa Dasakam</h3><p class="kriti-subtitle">അനുകമ്പ ദശകം</p><p class="kriti-excerpt">Ten verses of compassion, expressing the Guru's boundless love for all beings and the nature of divine grace.</p><a href="pages/kritis.html#anukampa" class="kriti-read">Read & Listen →</a></div>
+      <div class="kriti-card"><div class="kriti-header"><span class="kriti-lang">Sanskrit</span><span class="kriti-tag">Philosophical</span></div><h3 class="kriti-title">Brahmavidya Panchakam</h3><p class="kriti-subtitle">ब्रह्मविद्या पञ्चकम्</p><p class="kriti-excerpt">Five verses on the knowledge of Brahman, revealing the nature of ultimate reality through Advaita Vedanta.</p><a href="pages/kritis.html#brahmavidya" class="kriti-read">Read & Listen →</a></div>
+      <div class="kriti-card"><div class="kriti-header"><span class="kriti-lang">Malayalam</span><span class="kriti-tag">Devotional</span></div><h3 class="kriti-title">Janani Panchakam</h3><p class="kriti-subtitle">ജനനി പഞ്ചകം</p><p class="kriti-excerpt">Five verses in praise of the Divine Mother, sung with deep devotion in temples across Kerala.</p><a href="pages/kritis.html#janani" class="kriti-read">Read & Listen →</a></div>
+      <div class="kriti-card"><div class="kriti-header"><span class="kriti-lang">Malayalam</span><span class="kriti-tag">Social Reform</span></div><h3 class="kriti-title">Jati Nirnayam</h3><p class="kriti-subtitle">ജാതി നിർണ്ണയം</p><p class="kriti-excerpt">A powerful declaration on the nature of caste — asserting the fundamental unity of all human beings.</p><a href="pages/kritis.html#jati" class="kriti-read">Read & Listen →</a></div>
+    </div>
+    <div class="section-cta"><a href="pages/kritis.html" class="btn-primary">View All Kritis & Works</a></div>
+  </div>
+</section>
+<section class="timeline-teaser">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">DIVINE LIFE</div>
+      <h2 class="section-title">Key Moments in His Sacred Journey</h2>
+    </div>
+    <div class="timeline-strip">
+      <div class="tl-item"><div class="tl-year">1856</div><div class="tl-dot"></div><div class="tl-text">Born in Chempazhanthy, Thiruvananthapuram on the auspicious Chathayam nakshatra</div></div>
+      <div class="tl-item"><div class="tl-year">1888</div><div class="tl-dot"></div><div class="tl-text">Consecrated Shiva Linga at Aruvippuram — a revolutionary act breaking caste barriers in temple worship</div></div>
+      <div class="tl-item"><div class="tl-year">1903</div><div class="tl-dot"></div><div class="tl-text">Established Sivagiri Mutt at Varkala — the spiritual headquarters of his transformative mission</div></div>
+      <div class="tl-item"><div class="tl-year">1916</div><div class="tl-dot"></div><div class="tl-text">Met Mahatma Gandhi at Varkala — Gandhi called him a "saint among saints and a great social reformer"</div></div>
+      <div class="tl-item"><div class="tl-year">1928</div><div class="tl-dot"></div><div class="tl-text">Attained Mahasamadhi on September 20 at Sivagiri — merged with the eternal Brahman</div></div>
+    </div>
+    <div class="section-cta"><a href="pages/biography.html" class="btn-secondary">Full Biography →</a></div>
+  </div>
+</section>
+<section class="lang-showcase">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">HIS TEACHINGS IN YOUR LANGUAGE</div>
+      <h2 class="section-title">Choose Your Language</h2>
+    </div>
+    <div class="lang-grid">
+      <a href="pages/languages.html#english" class="lang-card"><div class="lang-script">Aa</div><span class="lang-name">English</span><span class="lang-note">Full translations</span></a>
+      <a href="pages/languages.html#malayalam" class="lang-card"><div class="lang-script">മ</div><span class="lang-name">Malayalam</span><span class="lang-note">മലയാളം · Original</span></a>
+      <a href="pages/languages.html#tamil" class="lang-card"><div class="lang-script">த</div><span class="lang-name">Tamil</span><span class="lang-note">தமிழ்</span></a>
+      <a href="pages/languages.html#hindi" class="lang-card"><div class="lang-script">ह</div><span class="lang-name">Hindi</span><span class="lang-note">हिन्दी</span></a>
+      <a href="pages/languages.html#kannada" class="lang-card"><div class="lang-script">ಕ</div><span class="lang-name">Kannada</span><span class="lang-note">ಕನ್ನಡ</span></a>
+      <a href="pages/languages.html#sanskrit" class="lang-card"><div class="lang-script">ॐ</div><span class="lang-name">Sanskrit</span><span class="lang-note">संस्कृतम्</span></a>
+    </div>
+  </div>
+</section>
+<section class="daily-quote">
+  <div class="container">
+    <div class="dq-wrapper">
+      <div class="dq-lamp">🪔</div>
+      <div class="dq-content">
+        <div class="dq-label">TODAY'S TEACHING</div>
+        <blockquote class="dq-text" id="dailyQuote">"Education that does not build character is no education at all."</blockquote>
+        <div class="dq-translation" id="dailyQuoteMl">"സ്വഭാവ ഗഠനം ചെയ്യാത്ത വിദ്യ, വിദ്യയല്ല."</div>
+        <button class="dq-next" onclick="nextQuote()">Next Teaching →</button>
       </div>
-
-      <div class="library-shell">
-        <aside class="library-sidebar">
-          <label class="search-field" for="librarySearch">
-            <span>Search works</span>
-            <input id="librarySearch" type="search" placeholder="Daiva, equality, Advaita, Tamil...">
-          </label>
-          <div class="filter-group" id="categoryFilters" aria-label="Category filters"></div>
-          <div class="sidebar-note">
-            <strong>Collection method</strong>
-            <p>
-              These are onsite renderings and companion texts created for direct reading here, not link-outs to
-              external archives.
-            </p>
-          </div>
-        </aside>
-
-        <div class="library-main">
-          <div class="library-grid" id="libraryGrid"></div>
-          <section class="reader-panel" id="readerPanel" aria-live="polite"></section>
-        </div>
-      </div>
-    </section>
-
-    <section class="section listening-section" id="listening">
-      <div class="section-heading">
-        <p class="eyebrow">Listening Hall</p>
-        <h2>Recite each work in many languages</h2>
-        <p>
-          Use the built-in recitation controls to generate spoken audio in your browser. Voice availability depends
-          on the device, but the site is prepared for Malayalam, Sanskrit, Tamil, and English reading.
-        </p>
-      </div>
-
-      <div class="listening-grid">
-        <article class="feature-card">
-          <span class="pill">On-site audio</span>
-          <h3>No YouTube, no off-site audio</h3>
-          <p>
-            Recitations are produced inside the browser with speech synthesis, keeping the devotional experience
-            self-contained.
-          </p>
-        </article>
-        <article class="feature-card">
-          <span class="pill">Language aware</span>
-          <h3>Malayalam, Sanskrit, Tamil, English</h3>
-          <p>
-            Each selected text can be spoken in multiple language versions, ideal for learners, families, and satsang
-            circles.
-          </p>
-        </article>
-        <article class="feature-card">
-          <span class="pill">Study mode</span>
-          <h3>Read, pause, repeat</h3>
-          <p>
-            Switch languages, replay recitations, and move between prayer, commentary, and philosophy without leaving
-            the reading panel.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section commentary-section" id="commentaries">
-      <div class="section-heading">
-        <p class="eyebrow">Translations &amp; Commentaries</p>
-        <h2>Interpretation rooted in spiritual clarity</h2>
-      </div>
-      <div class="commentary-grid" id="commentaryGrid"></div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>Sivagiri Ashram presents a contemplative digital library for reading, chanting, and reflecting on the Guru's spiritual horizon.</p>
-    <p class="footer-note">Built as a static website with all primary reading kept on-site and all previous YouTube links removed.</p>
-  </footer>
-
-  <script src="app.js"></script>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-om">ॐ</div>
+      <h3>Sree Narayana Guru</h3>
+      <p>sivagiriashram.com</p>
+      <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="pages/biography.html">Biography</a></li>
+        <li><a href="pages/philosophy.html">Philosophy</a></li>
+        <li><a href="pages/kritis.html">Kritis</a></li>
+        <li><a href="pages/poojas.html">Poojas</a></li>
+        <li><a href="pages/temples.html">Temples</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Sacred Works</h4>
+      <ul>
+        <li><a href="pages/atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+        <li><a href="pages/darsanamala.html">Darsanamala</a></li>
+        <li><a href="pages/teachings.html">Teachings</a></li>
+        <li><a href="pages/quotes.html">Quotes</a></li>
+        <li><a href="pages/festivals.html">Festivals</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Languages</h4>
+      <ul>
+        <li><a href="pages/languages.html#malayalam">Malayalam</a></li>
+        <li><a href="pages/languages.html#tamil">Tamil</a></li>
+        <li><a href="pages/languages.html#hindi">Hindi</a></li>
+        <li><a href="pages/languages.html#kannada">Kannada</a></li>
+        <li><a href="pages/languages.html#sanskrit">Sanskrit</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>A spiritual resource dedicated to the eternal teachings of Sree Narayana Guru</p>
+    <p>sivagiriashram.com · Hosted on GitHub Pages · ॐ शान्तिः शान्तिः शान्तिः</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

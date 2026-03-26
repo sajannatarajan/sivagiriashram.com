@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guru in All Languages | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&family=Noto+Sans+Tamil:wght@300;400;600&family=Noto+Sans+Devanagari:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.lang-hero { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 3rem; }
+.lang-bubble { background: linear-gradient(135deg, rgba(218,165,32,0.15), rgba(139,90,43,0.2)); border: 1px solid rgba(218,165,32,0.4); border-radius: 50px; padding: 1rem 2rem; text-align: center; cursor: pointer; transition: all 0.3s; min-width: 150px; }
+.lang-bubble:hover, .lang-bubble.active { background: var(--gold); border-color: var(--gold); transform: scale(1.05); }
+.lang-bubble:hover .lang-name, .lang-bubble.active .lang-name { color: #1a0a00; }
+.lang-bubble:hover .lang-script, .lang-bubble.active .lang-script { color: #1a0a00; }
+.lang-name { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--text-muted); display: block; }
+.lang-script { font-size: 1.5rem; color: var(--gold); display: block; margin-bottom: 0.2rem; }
+.lang-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; margin-bottom: 2rem; display: none; }
+.lang-panel.active { display: block; }
+.lang-panel h2 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.5rem; margin-bottom: 0.5rem; }
+.lang-panel .lang-subtitle { color: var(--saffron); font-style: italic; margin-bottom: 2rem; }
+.content-block { margin-bottom: 2rem; }
+.content-block h3 { font-family: 'Cinzel', serif; color: var(--saffron); font-size: 1.1rem; margin-bottom: 1rem; }
+.verse-box { background: linear-gradient(135deg, rgba(139,90,43,0.15), rgba(218,165,32,0.05)); border-left: 4px solid var(--gold); padding: 1.5rem; border-radius: 0 10px 10px 0; margin: 1rem 0; }
+.verse-box .original { font-size: 1.2rem; color: var(--gold); line-height: 1.9; margin-bottom: 0.5rem; }
+.verse-box .translation { color: var(--text-muted); font-style: italic; }
+.info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+.info-card { background: rgba(218,165,32,0.07); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; }
+.info-card h4 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 0.9rem; margin-bottom: 0.5rem; }
+@media(max-width:600px) { .info-row { grid-template-columns: 1fr; } }
+.ml { font-family: 'Noto Sans Malayalam', sans-serif; }
+.ta { font-family: 'Noto Sans Tamil', sans-serif; }
+.hi, .kn, .sa { font-family: 'Noto Sans Devanagari', sans-serif; }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">Bahubhasha — Many Tongues, One Truth</p>
+    <h1 class="page-title">Guru in All Languages</h1>
+    <p class="hero-desc">Sree Narayana Guru composed in Malayalam, Tamil, Sanskrit, Kannada & Hindi — wisdom for all humanity</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <!-- Language Selector -->
+    <div class="lang-hero fade-in">
+      <div class="lang-bubble active" onclick="showLang('ml', this)">
+        <span class="lang-script">മ</span>
+        <span class="lang-name">Malayalam</span>
+      </div>
+      <div class="lang-bubble" onclick="showLang('ta', this)">
+        <span class="lang-script">த</span>
+        <span class="lang-name">Tamil</span>
+      </div>
+      <div class="lang-bubble" onclick="showLang('sa', this)">
+        <span class="lang-script">स</span>
+        <span class="lang-name">Sanskrit</span>
+      </div>
+      <div class="lang-bubble" onclick="showLang('hi', this)">
+        <span class="lang-script">ह</span>
+        <span class="lang-name">Hindi</span>
+      </div>
+      <div class="lang-bubble" onclick="showLang('kn', this)">
+        <span class="lang-script">ಕ</span>
+        <span class="lang-name">Kannada</span>
+      </div>
+      <div class="lang-bubble" onclick="showLang('en', this)">
+        <span class="lang-script">A</span>
+        <span class="lang-name">English</span>
+      </div>
+    </div>
+
+    <!-- Malayalam Panel -->
+    <div class="lang-panel active" id="panel-ml">
+      <h2>മലയാളം — Malayalam</h2>
+      <div class="lang-subtitle">ഗുരുവിന്റെ മാതൃഭാഷ — The Mother Tongue of the Guru</div>
+      <p style="color:var(--text);">Malayalam was Sree Narayana Guru's primary language of composition. Most of his devotional, philosophical, and social reform poems were composed in Malayalam — including the Atmopadesa Satakam (100 Verses of Self-Instruction), Anukampa Dasakam, Janani Panchakam, and many more.</p>
+
+      <div class="content-block">
+        <h3>Core Teaching</h3>
+        <div class="verse-box">
+          <div class="original ml">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</div>
+          <div class="translation">One Caste, One Religion, One God for Humanity</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Atmopadesa Satakam — Verse 1</h3>
+        <div class="verse-box">
+          <div class="original ml">ഒന്നേ ഉള്ളൂ ഉണ്ടതിനൊരു ഭേദം<br>ഉണ്ടെന്ന് ഉള്ളതൊ ഇല്ലെന്ന്<br>ഉള്ളതൊ ഇല്ലെന്ന് ഉണ്ടു ഉഭയ<br>ഭ്രാന്ത് ഉണ്ടു ഒന്നതിൻ ആദി</div>
+          <div class="translation">"There is only one thing; it seems to be many. Whether this 'seeming many' truly exists or not — that is the perplexity of duality. The origin of this confusion is the One itself."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Daivadasakam — Prayer to God</h3>
+        <div class="verse-box">
+          <div class="original ml">ഒന്നാണ് ദൈവം, ഒന്നിടം ഇരിക്കൊണ്ടതൊ<br>ഒന്നല്ലൊ ഈ ജനം ഒന്നിക്കേ കാണ്ക</div>
+          <div class="translation">"God is One, dwelling in one place — yet this people, though one, do not see their unity."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Major Works in Malayalam</h3>
+        <div class="info-row">
+          <div class="info-card">
+            <h4>ആത്മോപദേശ ശതകം</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Atmopadesa Satakam — 100 Verses on the Self. The supreme philosophical poem in Malayalam.</p>
+          </div>
+          <div class="info-card">
+            <h4>അനുകമ്പ ദശകം</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Anukampa Dasakam — Ten Verses on Compassion. Universal love for all beings.</p>
+          </div>
+          <div class="info-card">
+            <h4>ജനനി പഞ്ചകം</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Janani Panchakam — Five Verses on the Divine Mother. Celebrating the feminine divine.</p>
+          </div>
+          <div class="info-card">
+            <h4>ദൈവദശകം</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Daivadasakam — Ten Verses on God. A prayer to the formless divine that transcends all religion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tamil Panel -->
+    <div class="lang-panel" id="panel-ta">
+      <h2>தமிழ் — Tamil</h2>
+      <div class="lang-subtitle">இறையன்பின் மொழி — Language of Divine Love</div>
+      <p style="color:var(--text);">Sree Narayana Guru composed several important devotional poems in Tamil, reflecting his deep connection to the Tamil-speaking devotees of Kerala and Tamil Nadu. His Tamil compositions include Thiruvarutpa (Sacred Grace Songs) and devotional verses to Murugan and Shiva.</p>
+
+      <div class="content-block">
+        <h3>Core Teaching in Tamil</h3>
+        <div class="verse-box">
+          <div class="original ta">ஒரு சாதி ஒரு மதம் ஒரு தெய்வம் மனிதன்</div>
+          <div class="translation">One Caste, One Religion, One God for Humanity</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Thiruvarutpa — Sacred Grace Song</h3>
+        <div class="verse-box">
+          <div class="original ta">அன்பே சிவம், அன்பே தெய்வம்<br>அன்பினால் அனைத்தும் ஒன்றாகும்<br>காதலே கடவுள், காதலே கடமை<br>காதலில் கலர்ந்திட வாருங்கள்</div>
+          <div class="translation">"Love is Shiva, Love is God — through love, all becomes one. Love is God, love is duty — come, merge in love."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Tamil Prayer</h3>
+        <div class="verse-box">
+          <div class="original ta">சாதி இல்லை, மதம் இல்லை, கடவுள் ஒருவரே<br>மனிதன் மனிதனுக்கு சகோதரன் — இதுவே நன்மையின் வழி</div>
+          <div class="translation">"No caste, no religion, one God — humanity is brotherhood — this alone is the way of goodness."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Major Works in Tamil</h3>
+        <div class="info-row">
+          <div class="info-card">
+            <h4>திருவருட்பா</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Thiruvarutpa — Sacred Grace Songs. Devotional poems in classical Tamil tradition.</p>
+          </div>
+          <div class="info-card">
+            <h4>முருகன் கீர்த்தனை</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Murugan Keerthanai — Songs to Lord Murugan, connecting to the deep Tamil devotional tradition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sanskrit Panel -->
+    <div class="lang-panel" id="panel-sa">
+      <h2>संस्कृतम् — Sanskrit</h2>
+      <div class="lang-subtitle">देववाणी — Language of the Gods</div>
+      <p style="color:var(--text);">Guru's command of Sanskrit was extraordinary for a non-Brahmin in 19th-century Kerala. His Sanskrit compositions include the monumental Darsanamala (Garland of Visions) — ten philosophical decads that demonstrate mastery of the classical philosophical tradition — as well as Brahmavidya Panchakam and many other works.</p>
+
+      <div class="content-block">
+        <h3>Darsanamala — Opening Verse</h3>
+        <div class="verse-box">
+          <div class="original sa">एकमेव अद्वितीयं ब्रह्म<br>नेह नानास्ति किञ्चन<br>आदावन्ते च मध्ये च<br>ह्यनन्तं ब्रह्म केवलम्</div>
+          <div class="translation">"Brahman alone exists, without a second. Here, there is no multiplicity whatsoever. At the beginning, at the end, and in the middle — Brahman alone, infinite."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Brahmavidya Panchakam</h3>
+        <div class="verse-box">
+          <div class="original sa">ब्रह्म सत्यं जगन्मिथ्या<br>जीवो ब्रह्मैव नापरः<br>ज्ञानाद् ब्रह्म विद् ब्रह्मैव भवति</div>
+          <div class="translation">"Brahman is real, the world is illusion, the individual self is Brahman alone — not other. Through knowledge, the knower of Brahman becomes Brahman itself."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Major Works in Sanskrit</h3>
+        <div class="info-row">
+          <div class="info-card">
+            <h4>दर्शनमाला</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Darsanamala — 10 philosophical decads (100 verses). The supreme philosophical masterpiece.</p>
+          </div>
+          <div class="info-card">
+            <h4>ब्रह्मविद्या पञ्चकम्</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Brahmavidya Panchakam — Five Verses on the Knowledge of Brahman.</p>
+          </div>
+          <div class="info-card">
+            <h4>आत्मविलास</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Atmavilasa — Sport of the Self. A meditation on the playful nature of consciousness.</p>
+          </div>
+          <div class="info-card">
+            <h4>अद्वैत दीपिका</h4>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Advaita Deepika — Lamp of Non-Duality. Illuminating the path of Advaita Vedanta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hindi Panel -->
+    <div class="lang-panel" id="panel-hi">
+      <h2>हिन्दी — Hindi</h2>
+      <div class="lang-subtitle">राष्ट्रभाषा में गुरु का संदेश — Guru's Message in the National Language</div>
+      <p style="color:var(--text);">While Hindi was not Guru's primary language of composition, his teachings have been translated and disseminated widely in Hindi. His universal message transcends language — and the SNDP and Narayana Guru institutions actively spread his wisdom to Hindi-speaking communities across India.</p>
+
+      <div class="content-block">
+        <h3>मुख्य शिक्षाएं — Core Teachings</h3>
+        <div class="verse-box">
+          <div class="original hi">एक जाति, एक धर्म, एक ईश्वर — मानव के लिए।<br>बिना जाति-भेद, बिना धर्म-द्वेष — सभी भाई-बहन बनकर जिएं।</div>
+          <div class="translation">"One Caste, One Religion, One God — for Humanity. Without caste division, without religious hatred — all should live as brothers and sisters."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>आत्मोपदेश शतक — हिन्दी अनुवाद</h3>
+        <div class="verse-box">
+          <div class="original hi">एक ही है सत्य, उसमें भेद का भ्रम है<br>जो है वह है, जो नहीं वह भी है — यही माया का रहस्य<br>यह सब एक ही के विस्तार में है</div>
+          <div class="translation">"There is only one truth; the appearance of multiplicity is illusion. What exists, exists; what does not exist, also appears to exist — this is the mystery of Maya. All this is within the expansion of the One."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>गुरु की प्रमुख शिक्षाएं</h3>
+        <ul style="color:var(--text); line-height:2.5; list-style:disc; padding-left:2rem; font-family:'Noto Sans Devanagari',sans-serif;">
+          <li>शिक्षा से स्वतंत्र बनो; संगठित हो; उद्योग से समृद्धि प्राप्त करो</li>
+          <li>मनुष्य को मनुष्य को कष्ट नहीं देना चाहिए — यही सभी धर्मों का सार है</li>
+          <li>ईश्वर मंदिर में नहीं, हृदय में है</li>
+          <li>केवल एक जाति है — वह है मानव जाति</li>
+          <li>जो धर्म भी मानो, अच्छा इंसान बनना काफी है</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kannada Panel -->
+    <div class="lang-panel" id="panel-kn">
+      <h2>ಕನ್ನಡ — Kannada</h2>
+      <div class="lang-subtitle">ಗುರುವಿನ ವಾಣಿ — Words of the Guru</div>
+      <p style="color:var(--text);">Guru's influence extended into Karnataka, particularly in the coastal Tulu Nadu region. Several devotional poems attributed to Guru's tradition have been rendered in Kannada, and the Kannada-speaking community reveres him as a universal saint.</p>
+
+      <div class="content-block">
+        <h3>ಮೂಲ ಬೋಧನೆ — Core Teaching</h3>
+        <div class="verse-box">
+          <div class="original kn">ಒಂದೇ ಜಾತಿ ಒಂದೇ ಧರ್ಮ ಒಂದೇ ದೇವರು ಮನುಷ್ಯನಿಗೆ</div>
+          <div class="translation">"One Caste, One Religion, One God for Humanity"</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>ಗುರುವಿನ ಶಿಕ್ಷಣ — Guru's Teachings in Kannada</h3>
+        <ul style="color:var(--text); line-height:2.5; list-style:disc; padding-left:2rem;">
+          <li>ವಿದ್ಯೆಯಿಂದ ಸ್ವತಂತ್ರರಾಗಿ; ಸಂಘಟಿತರಾಗಿ; ಕಾರ್ಯದಿಂದ ಸಮೃದ್ಧಿ ಪಡೆಯಿರಿ</li>
+          <li>ಮನುಷ್ಯರು ಮನುಷ್ಯರನ್ನು ಪೀಡಿಸಬಾರದು — ಇದೇ ಎಲ್ಲಾ ಧರ್ಮಗಳ ಸಾರ</li>
+          <li>ದೇವರು ಒಬ್ಬ, ಜನ ಒಬ್ಬ — ಭೇದ ಏಕೆ?</li>
+          <li>ಒಂದೇ ಒಂದು ಜಾತಿ — ಅದು ಮಾನವ ಜಾತಿ</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>Guru's Connection to Karnataka</h3>
+        <p style="color:var(--text-muted);">Guru visited Mangalore and other parts of coastal Karnataka during his travels. His message of universal brotherhood resonated deeply with the Kannada-speaking coastal communities, many of whom faced similar caste discrimination. Several SNDP branches operate in Karnataka today.</p>
+      </div>
+    </div>
+
+    <!-- English Panel -->
+    <div class="lang-panel" id="panel-en">
+      <h2>English</h2>
+      <div class="lang-subtitle">The Universal Message — For the World</div>
+      <p style="color:var(--text);">Guru's teachings were ahead of their time — and as relevant to the contemporary global world as they were to 19th-century Kerala. Translated and studied in English, his philosophy offers a vision of human unity and spiritual liberation that transcends all cultural and linguistic barriers.</p>
+
+      <div class="content-block">
+        <h3>Core Teaching</h3>
+        <div class="verse-box">
+          <div class="original" style="font-size:1.5rem; color:var(--gold);">"One Caste, One Religion, One God for Humanity"</div>
+          <div class="translation">The supreme declaration — in its English rendering, as powerful as in the original Malayalam.</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Atmopadesa Satakam — Verse 1 (English)</h3>
+        <div class="verse-box">
+          <div class="original" style="font-size:1rem; color:var(--gold); font-style:italic;">"There is but one reality; in it there seems to be diversity. Whether this diversity truly exists or not — that is the bewilderment of duality. At the source of this bewilderment is the One itself."</div>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>Guru's Message for the World</h3>
+        <ul style="color:var(--text); line-height:2; list-style:disc; padding-left:2rem;">
+          <li>Whatever your religion — being a good human being is sufficient</li>
+          <li>Through education, attain freedom; organise; through industry, achieve prosperity</li>
+          <li>No human being should harm another — this is the essence of all Dharma</li>
+          <li>God is one; humanity is one; why this sense of division?</li>
+          <li>The divine you seek in the temple is your own true nature</li>
+          <li>Service to human beings is the highest form of worship</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="atmopadesa-satakam.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">📜</span>
+          <h4>Atmopadesa Satakam</h4>
+          <p>100 Verses in all languages</p>
+        </div>
+      </a>
+      <a href="kritis.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎵</span>
+          <h4>Kritis & Works</h4>
+          <p>Complete compositions</p>
+        </div>
+      </a>
+      <a href="quotes.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">💬</span>
+          <h4>Quotes</h4>
+          <p>Wisdom in all languages</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+function showLang(lang, btn) {
+  document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.lang-bubble').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + lang).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>

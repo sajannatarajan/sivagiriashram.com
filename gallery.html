@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.gallery-intro { background: linear-gradient(135deg, rgba(218,165,32,0.1), rgba(139,90,43,0.15)); border: 1px solid rgba(218,165,32,0.3); border-radius: 14px; padding: 2.5rem; text-align: center; margin-bottom: 3rem; }
+.gallery-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.gallery-tab { padding: 0.5rem 1.2rem; background: var(--surface); border: 1px solid var(--border); border-radius: 25px; cursor: pointer; font-size: 0.85rem; color: var(--text-muted); transition: all 0.3s; font-family: 'Cinzel', serif; }
+.gallery-tab.active, .gallery-tab:hover { background: var(--gold); color: #1a0a00; border-color: var(--gold); }
+.gallery-section { margin-bottom: 3rem; }
+.gallery-section h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+.gallery-mosaic { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.gallery-item { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.gallery-item:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(218,165,32,0.2); }
+.gallery-img-placeholder { background: linear-gradient(135deg, rgba(139,90,43,0.3), rgba(218,165,32,0.2)); height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.gallery-img-placeholder::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(218,165,32,0.1) 0%, transparent 70%); }
+.gallery-img-placeholder .icon { font-size: 4rem; margin-bottom: 0.5rem; position: relative; }
+.gallery-img-placeholder .img-label { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--gold); opacity: 0.8; position: relative; text-align: center; padding: 0 1rem; }
+.gallery-item-info { padding: 1.2rem; }
+.gallery-item-info h4 { font-family: 'Cinzel', serif; color: var(--saffron); font-size: 0.95rem; margin-bottom: 0.4rem; }
+.gallery-item-info p { color: var(--text-muted); font-size: 0.85rem; }
+.timeline-visual { display: grid; gap: 1px; background: var(--border); }
+.timeline-row { display: grid; grid-template-columns: 100px 1fr; background: var(--bg); }
+.timeline-year { background: linear-gradient(135deg, rgba(218,165,32,0.15), rgba(139,90,43,0.2)); display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; color: var(--gold); font-size: 1rem; padding: 1rem; font-weight: 700; }
+.timeline-event { padding: 1rem 1.5rem; display: flex; align-items: center; }
+.timeline-event h4 { font-family: 'Cinzel', serif; color: var(--saffron); font-size: 0.9rem; margin-bottom: 0.2rem; }
+.timeline-event p { color: var(--text-muted); font-size: 0.85rem; }
+.add-photos-note { background: rgba(218,165,32,0.05); border: 2px dashed rgba(218,165,32,0.3); border-radius: 12px; padding: 2rem; text-align: center; margin: 2rem 0; }
+.legacy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1.5rem; }
+.legacy-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; }
+.legacy-stat .stat-num { font-family: 'Cinzel', serif; font-size: 3rem; color: var(--gold); display: block; }
+.legacy-stat .stat-label { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">Chitra Manjari</p>
+    <h1 class="page-title">Gallery</h1>
+    <p class="hero-desc">A visual journey through the life, temples, and legacy of Sree Narayana Guru</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <div class="gallery-intro fade-in">
+      <p style="color:var(--text); font-size:1.1rem;">This gallery presents a visual tribute to Sree Narayana Guru — his sacred images, the temples he consecrated, the historic events of his life, and the continuing legacy of his social and spiritual transformation of Kerala and humanity.</p>
+      <p style="color:var(--text-muted); margin-top:1rem; font-size:0.9rem;">Images shown are representative illustrations. To contribute photos of Guru temples, festivals, and related sites, please contact us at sivagiriashram.com</p>
+    </div>
+
+    <!-- Gallery Tabs -->
+    <div class="gallery-tabs fade-in">
+      <span class="gallery-tab active">All</span>
+      <span class="gallery-tab">Guru Images</span>
+      <span class="gallery-tab">Temples</span>
+      <span class="gallery-tab">Sivagiri Pilgrimage</span>
+      <span class="gallery-tab">Historic Sites</span>
+      <span class="gallery-tab">Nature & Tapas</span>
+    </div>
+
+    <!-- Guru Images Section -->
+    <div class="gallery-section fade-in">
+      <h3>🙏 Sacred Images of Sree Narayana Guru</h3>
+      <div class="gallery-mosaic">
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(218,165,32,0.3), rgba(139,90,43,0.4));">
+            <div class="icon">🕉️</div>
+            <div class="img-label">Sree Narayana Guru<br>Iconic Portrait</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Sage of Kerala</h4>
+            <p>The iconic image of Sree Narayana Guru in contemplative pose — the most widely venerated image of the Guru across Kerala and the diaspora.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(255,140,0,0.3), rgba(218,165,32,0.4));">
+            <div class="icon">✨</div>
+            <div class="img-label">Young Narayana<br>Tapas Period</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Young Ascetic</h4>
+            <p>Guru as a young man during his years of solitary tapas at Maruthvamala — the period of profound spiritual practice that shaped his realisation.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(139,90,43,0.4), rgba(218,165,32,0.2));">
+            <div class="icon">🌿</div>
+            <div class="img-label">Guru in Nature<br>Neyyar River</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Guru at Aruvippuram</h4>
+            <p>The Neyyar river banks at Aruvippuram where Guru performed the historic first consecration in 1888 — the event that changed Kerala's history.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(218,165,32,0.2), rgba(255,140,0,0.3));">
+            <div class="icon">🤝</div>
+            <div class="img-label">Meeting with<br>Mahatma Gandhi 1925</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Guru Meets Gandhi</h4>
+            <p>The historic meeting of Sree Narayana Guru and Mahatma Gandhi at Sivagiri in 1925 — two great souls whose visions of equality converged.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(100,60,20,0.4), rgba(218,165,32,0.3));">
+            <div class="icon">📖</div>
+            <div class="img-label">Guru with<br>Rabindranath Tagore</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Guru and Tagore</h4>
+            <p>Rabindranath Tagore's visit to Sree Narayana Guru — a meeting of two great spiritual and cultural giants of India.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(218,165,32,0.4), rgba(139,90,43,0.3));">
+            <div class="icon">🪔</div>
+            <div class="img-label">Guru's<br>Mahasamadhi 1928</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Great Departure</h4>
+            <p>The sacred site of Guru's Mahasamadhi at Sivagiri, September 20, 1928 — when this great soul consciously departed from the physical body.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Temples Section -->
+    <div class="gallery-section fade-in">
+      <h3>🏛️ Sacred Temples</h3>
+      <div class="gallery-mosaic">
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(139,90,43,0.3), rgba(100,50,10,0.4)); height:260px;">
+            <div class="icon">⛩️</div>
+            <div class="img-label">Sivagiri Mutt<br>Varkala, Kerala</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Sivagiri Mutt</h4>
+            <p>The spiritual headquarters — the Sarada Mutt and Mahasamadhi Shrine at Varkala. The holiest site associated with Sree Narayana Guru.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(218,165,32,0.3), rgba(139,90,43,0.2)); height:260px;">
+            <div class="icon">🕉️</div>
+            <div class="img-label">Aruvippuram<br>Shiva Temple</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Aruvippuram Temple</h4>
+            <p>The historic site of Guru's first consecration in 1888 — where the social revolution of Kerala began, on the banks of the sacred Neyyar river.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(255,140,0,0.2), rgba(139,90,43,0.3)); height:260px;">
+            <div class="icon">🪞</div>
+            <div class="img-label">Mirror Temple<br>Murukkumpuzha</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Mirror Temple</h4>
+            <p>The unique temple where Guru installed a mirror instead of an idol — with the inscription "Here, behold the vision of God."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sivagiri Pilgrimage -->
+    <div class="gallery-section fade-in">
+      <h3>🏔️ Sivagiri Teertha Yatra</h3>
+      <div class="gallery-mosaic">
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(255,200,50,0.3), rgba(218,165,32,0.4));">
+            <div class="icon">🚩</div>
+            <div class="img-label">Flag Hoisting<br>December 30</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Yellow Flag</h4>
+            <p>The ceremonial hoisting of the yellow flag at dawn on December 30 — signalling the start of the annual Sivagiri Pilgrimage.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(218,165,32,0.25), rgba(255,160,50,0.3));">
+            <div class="icon">🙏</div>
+            <div class="img-label">Pilgrims in<br>Yellow Robes</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>The Pilgrims</h4>
+            <p>Hundreds of thousands of pilgrims clad in yellow — the colour of knowledge and divine light — making their annual journey to Sivagiri.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, rgba(139,90,43,0.3), rgba(218,165,32,0.25));">
+            <div class="icon">🎵</div>
+            <div class="img-label">Cultural<br>Programmes</div>
+          </div>
+          <div class="gallery-item-info">
+            <h4>Music and Culture</h4>
+            <p>Cultural programmes, classical music, and recitations of Guru's kritis that form the heart of the Sivagiri Pilgrimage celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legacy Section -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">The Legacy in Numbers</h2>
+      <p class="section-subtitle">The concrete impact of Sree Narayana Guru's vision</p>
+    </div>
+
+    <div class="legacy-grid fade-in">
+      <div class="legacy-stat">
+        <span class="stat-num">60+</span>
+        <div class="stat-label">Temples consecrated by Guru, open to all castes</div>
+      </div>
+      <div class="legacy-stat">
+        <span class="stat-num">100+</span>
+        <div class="stat-label">Schools established under Guru's influence</div>
+      </div>
+      <div class="legacy-stat">
+        <span class="stat-num">1928</span>
+        <div class="stat-label">Year of Guru's Mahasamadhi, age 72</div>
+      </div>
+      <div class="legacy-stat">
+        <span class="stat-num">∞</span>
+        <div class="stat-label">Lives transformed by his teaching of equality</div>
+      </div>
+      <div class="legacy-stat">
+        <span class="stat-num">5</span>
+        <div class="stat-label">Languages in which Guru composed — Malayalam, Tamil, Sanskrit, Kannada, Hindi</div>
+      </div>
+      <div class="legacy-stat">
+        <span class="stat-num">5L+</span>
+        <div class="stat-label">Pilgrims at annual Sivagiri Teertha Yatra</div>
+      </div>
+    </div>
+
+    <!-- Photo Upload Notice -->
+    <div class="add-photos-note fade-in" style="margin-top:3rem;">
+      <div style="font-size:3rem; margin-bottom:1rem;">📸</div>
+      <h3 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:1rem;">Contribute to the Gallery</h3>
+      <p style="color:var(--text-muted);">Have photos of Sree Narayana Guru temples, festivals, pilgrimage events, or related sites? We welcome contributions to this gallery.</p>
+      <p style="color:var(--text-muted); margin-top:0.5rem;">Please email high-resolution images to: <span style="color:var(--gold);">gallery@sivagiriashram.com</span></p>
+      <p style="color:var(--text-muted); margin-top:0.5rem; font-size:0.85rem;">All images should be original, properly licensed, or in the public domain.</p>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="temples.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🏛️</span>
+          <h4>Temples</h4>
+          <p>Sacred places of Guru</p>
+        </div>
+      </a>
+      <a href="festivals.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎊</span>
+          <h4>Festivals</h4>
+          <p>Celebrations & pilgrimages</p>
+        </div>
+      </a>
+      <a href="biography.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">📖</span>
+          <h4>Biography</h4>
+          <p>Life of Sree Narayana Guru</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

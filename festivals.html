@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festivals & Celebrations | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.festival-hero-card { background: linear-gradient(135deg, rgba(218,165,32,0.2), rgba(139,90,43,0.2)); border: 2px solid var(--gold); border-radius: 16px; padding: 3rem 2.5rem; text-align: center; margin-bottom: 3rem; }
+.festival-hero-card h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 2rem; margin-bottom: 0.5rem; }
+.festival-hero-card .date-badge { display: inline-block; background: var(--gold); color: #1a0a00; padding: 0.5rem 1.5rem; border-radius: 30px; font-family: 'Cinzel', serif; font-weight: 700; margin: 1rem 0; font-size: 1.1rem; }
+.fest-section { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; margin-bottom: 2rem; }
+.fest-section h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.4rem; margin-bottom: 1rem; }
+.ritual-steps { counter-reset: step-counter; }
+.ritual-step { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.2rem 0; border-bottom: 1px solid var(--border); }
+.ritual-step:last-child { border-bottom: none; }
+.step-num { flex-shrink: 0; width: 36px; height: 36px; background: linear-gradient(135deg, var(--saffron), var(--gold)); color: #1a0a00; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-weight: 700; font-size: 0.85rem; }
+.step-content h5 { font-family: 'Cinzel', serif; color: var(--saffron); margin-bottom: 0.3rem; font-size: 0.95rem; }
+.step-content p { color: var(--text-muted); font-size: 0.9rem; }
+.time-badge { font-size: 0.75rem; color: var(--gold); letter-spacing: 1px; background: rgba(218,165,32,0.1); padding: 0.2rem 0.6rem; border-radius: 10px; border: 1px solid rgba(218,165,32,0.3); }
+.verse-box { background: linear-gradient(135deg, rgba(139,90,43,0.15), rgba(218,165,32,0.05)); border: 1px solid rgba(218,165,32,0.2); border-radius: 10px; padding: 1.5rem; margin: 1rem 0; }
+.verse-box .ml { font-family: 'Noto Sans Malayalam', sans-serif; color: var(--gold); font-size: 1.1rem; margin-bottom: 0.5rem; }
+.verse-box .trans { color: var(--text-muted); font-style: italic; font-size: 0.9rem; }
+.month-calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; background: var(--border); border-radius: 8px; overflow: hidden; margin: 1.5rem 0; }
+.cal-day { background: var(--bg); padding: 0.6rem 0.3rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
+.cal-day.header { background: linear-gradient(135deg, var(--saffron), var(--gold)); color: #1a0a00; font-weight: 700; font-size: 0.75rem; }
+.cal-day.highlight { background: rgba(218,165,32,0.2); color: var(--gold); font-weight: 700; }
+.cal-day.main-day { background: var(--gold); color: #1a0a00; font-weight: 900; }
+.fest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; }
+.fest-card { background: linear-gradient(135deg, var(--surface), rgba(139,90,43,0.1)); border: 1px solid var(--border); border-radius: 12px; padding: 1.8rem; transition: transform 0.3s; }
+.fest-card:hover { transform: translateY(-4px); }
+.fest-card h4 { font-family: 'Cinzel', serif; color: var(--gold); margin-bottom: 0.5rem; font-size: 1rem; }
+.fest-card .fest-date { color: var(--saffron); font-size: 0.85rem; margin-bottom: 0.8rem; font-style: italic; }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="festivals.html" class="active">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">Utsavam — Sacred Celebrations</p>
+    <h1 class="page-title">Festivals & Sacred Observances</h1>
+    <p class="hero-desc">Celebrating the life, teachings and legacy of Sree Narayana Guru</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <!-- Sivagiri Pilgrimage -->
+    <div class="festival-hero-card fade-in">
+      <div style="font-size:3rem; margin-bottom:0.5rem;">🏔️</div>
+      <h3>Sivagiri Teertha Yatra</h3>
+      <div style="font-family:'Noto Sans Malayalam',sans-serif; color:var(--saffron); font-size:1.1rem; margin-bottom:0.5rem;">ശിവഗിരി തീർത്ഥ യാത്ര</div>
+      <div class="date-badge">December 30 – January 1</div>
+      <p style="color:var(--text); max-width:700px; margin:1rem auto 0;">The most sacred pilgrimage associated with Sree Narayana Guru — inaugurated by Guru himself in 1904 at Sivagiri Mutt, Varkala. Each year, hundreds of thousands of pilgrims gather to honour Guru's teachings and renew their commitment to his principles of education, cleanliness, and devotion.</p>
+    </div>
+
+    <div class="fest-section fade-in">
+      <h3>About Sivagiri Pilgrimage</h3>
+      <p>The Sivagiri Teertha Yatra is unique among Indian pilgrimages — it was founded not to honour ancient tradition, but as a deliberate act of social reformation. Guru established the pilgrimage as an alternative to the caste-discriminatory pilgrimages of his time, welcoming all people regardless of birth.</p>
+      <p style="margin-top:1rem;">Unlike most Hindu pilgrimages that emphasise physical penance, the Sivagiri pilgrimage emphasises <strong>knowledge, cleanliness, and devotion</strong> — the three pillars Guru prescribed for social transformation. Pilgrims are encouraged to read, reflect, and discuss Guru's teachings during the journey.</p>
+
+      <h4 style="font-family:'Cinzel',serif; color:var(--saffron); margin:1.5rem 0 1rem;">The Three-Day Programme</h4>
+      <div class="ritual-steps">
+        <div class="ritual-step">
+          <div class="step-num">30</div>
+          <div class="step-content">
+            <h5>December 30 — Arrival & Flag Hoisting</h5>
+            <span class="time-badge">Dawn</span>
+            <p style="margin-top:0.5rem;">Pilgrims arrive at Sivagiri Mutt. The yellow flag (the colour of knowledge and devotion) is ceremonially hoisted. The Three Flags of the Sivagiri Pilgrimage symbolise Jnana (knowledge), Bhakti (devotion), and Karma (righteous action).</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">30</div>
+          <div class="step-content">
+            <h5>December 30 — Inaugural Session</h5>
+            <span class="time-badge">Morning – Afternoon</span>
+            <p style="margin-top:0.5rem;">Grand inaugural ceremony with SNDP leaders, religious scholars, and social activists. Keynote addresses on Guru's relevance to contemporary issues. Recitation of Guru's works.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">31</div>
+          <div class="step-content">
+            <h5>December 31 — Procession & Discourses</h5>
+            <span class="time-badge">All Day</span>
+            <p style="margin-top:0.5rem;">Grand procession of pilgrims through Varkala town to Sivagiri Mutt. Pilgrims wearing the traditional yellow robe (representing knowledge and light). Seminars, discourses, and cultural programmes throughout the day.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h5>January 1 — Guru Pooja & Valedictory</h5>
+            <span class="time-badge">Morning & Evening</span>
+            <p style="margin-top:0.5rem;">Special Guru Pooja at the Mahasamadhi Shrine. Valedictory ceremony with cultural programmes and awards for social service. The yellow flag is lowered and pilgrims take their leave with renewed commitment to Guru's ideals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guru Jayanti -->
+    <div class="festival-hero-card fade-in">
+      <div style="font-size:3rem; margin-bottom:0.5rem;">🌟</div>
+      <h3>Sree Narayana Guru Jayanti</h3>
+      <div style="font-family:'Noto Sans Malayalam',sans-serif; color:var(--saffron); font-size:1.1rem; margin-bottom:0.5rem;">ശ്രീ നാരായണ ഗുരു ജയന്തി</div>
+      <div class="date-badge">Chingam Chathayam — August/September</div>
+      <p style="color:var(--text); max-width:700px; margin:1rem auto 0;">The birth anniversary of Sree Narayana Guru is celebrated on the star Chathayam in the Malayalam month of Chingam (August–September). It is a public holiday in Kerala and celebrated with great fervour across the state, the country, and wherever Keralites live around the world.</p>
+    </div>
+
+    <div class="fest-section fade-in">
+      <h3>Guru Jayanti Celebrations</h3>
+
+      <div class="ritual-steps">
+        <div class="ritual-step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h5>Prabhath Pheri (Dawn Procession)</h5>
+            <span class="time-badge">5:00 AM</span>
+            <p style="margin-top:0.5rem;">Communities march through streets before dawn, singing Guru's kritis and social-reform songs. The pre-dawn darkness symbolises the ignorance that Guru's wisdom dispelled.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h5>Special Guru Pooja</h5>
+            <span class="time-badge">6:00 AM</span>
+            <p style="margin-top:0.5rem;">Grand Guru Pooja with full ritual honours at Sivagiri and all Narayana Guru temples. Guru Stuti, Guru Ashtakam, and Atmopadesa Satakam verses are recited. Prasadam distributed to all.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h5>Cultural Programmes</h5>
+            <span class="time-badge">Morning</span>
+            <p style="margin-top:0.5rem;">Cultural programmes celebrating Guru's life — drama, music, dance, recitation competitions. Schools conduct essay competitions on Guru's teachings. SNDP branches organise community meals open to all.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h5>Seminars & Discourses</h5>
+            <span class="time-badge">Afternoon</span>
+            <p style="margin-top:0.5rem;">Academic seminars on Guru's philosophy and its contemporary relevance. Leaders and thinkers speak on social justice, education, and Guru's contribution to modern Kerala.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h5>Samooha Bhojanam (Community Feast)</h5>
+            <span class="time-badge">Noon</span>
+            <p style="margin-top:0.5rem;">A community feast open to all — symbolising Guru's teaching of universal brotherhood. People of all faiths and communities share food together, breaking caste and religious barriers.</p>
+          </div>
+        </div>
+      </div>
+
+      <h4 style="font-family:'Cinzel',serif; color:var(--saffron); margin:2rem 0 1rem;">Guru Jayanti Prayers</h4>
+
+      <div class="verse-box">
+        <div class="ml">ഗുരുദേവ ജയ ജയ ഗുരുദേവ<br>ലോകനായക ജയ ജയ ഗുരുദേവ<br>ഒരു ജാതി ഒരു മതം ഒരു ദൈവം<br>ഉദ്‌ഘോഷിക്കും ഗുരുദേവ ജയ</div>
+        <div class="trans">"Victory, victory to Gurudeva! O leader of the world, victory to Gurudeva! You proclaimed one caste, one religion, one God — victory to Gurudeva!"</div>
+      </div>
+    </div>
+
+    <!-- Mahasamadhi Day -->
+    <div class="fest-section fade-in">
+      <h3>🕯️ Guru Mahasamadhi Dinam</h3>
+      <div style="display:inline-block; background:rgba(218,165,32,0.1); border:1px solid var(--border); border-radius:20px; padding:0.4rem 1rem; font-size:0.85rem; color:var(--saffron); margin-bottom:1rem;">Karkidakam Karthika — September 20, 1928</div>
+      <p>The Mahasamadhi of Sree Narayana Guru is observed with solemnity and devotion each year. Guru departed from his physical body on Karthika star in the Malayalam month of Karkidakam (September 1928).</p>
+      <p style="margin-top:1rem;">Devotees observe <strong>Mahasamadhi Dinam</strong> with special poojas at the Mahasamadhi shrine at Sivagiri, prayer meetings, recitation of Guru's works, and a day of reflection on Guru's eternal teachings.</p>
+      <div class="verse-box" style="margin-top:1.5rem;">
+        <div class="ml">ജീവൻ ജ്ഞാനിയ്ക്ക് ജ്ഞാനമേ ദേഹം<br>ദേഹം ദൈവ ക്ഷേത്രമേ ആകും</div>
+        <div class="trans">"For the wise one, knowledge itself is life; the body is the temple of the divine." — Guru's teaching on the eternal nature of the Self that does not die with the body.</div>
+      </div>
+    </div>
+
+    <!-- Other Festivals -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Other Sacred Observances</h2>
+    </div>
+
+    <div class="fest-grid fade-in">
+      <div class="fest-card">
+        <h4>Aruvippuram Utsavam</h4>
+        <div class="fest-date">February/March — Shivratri</div>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Annual festival at Aruvippuram temple commemorating the historic 1888 consecration. Special Shivratri poojas, procession, and re-enactment of the historic event that changed Kerala.</p>
+      </div>
+      <div class="fest-card">
+        <h4>Guru Purnima</h4>
+        <div class="fest-date">Ashadha Purnima — July</div>
+        <p style="color:var(--text-muted); font-size:0.85rem;">The traditional Guru Purnima festival celebrated at all Narayana Guru temples. Disciples honour the Guru-disciple relationship and the lineage of wisdom through the ages.</p>
+      </div>
+      <div class="fest-card">
+        <h4>Onam Celebrations</h4>
+        <div class="fest-date">August/September — Thiruvonam</div>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Guru believed in Onam as a festival of universal brotherhood. All Narayana Guru institutions celebrate Onam with community feasts open to all, cultural programmes, and recitations of Guru's works.</p>
+      </div>
+      <div class="fest-card">
+        <h4>Vishu Celebrations</h4>
+        <div class="fest-date">April — Vishu Kani</div>
+        <p style="color:var(--text-muted); font-size:0.85reb;">The Malayalam New Year celebrated with special poojas, Kani darshan, and community programmes. Guru's teaching of prosperity through righteous action is the theme of Vishu observances.</p>
+      </div>
+      <div class="fest-card">
+        <h4>SNDP Yogam Foundation Day</h4>
+        <div class="fest-date">May 15</div>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Anniversary of the founding of the SNDP Yogam in 1903 — the organisation Guru blessed to carry forward his social mission. Celebrated with community programmes and renewed commitment to equality.</p>
+      </div>
+      <div class="fest-card">
+        <h4>School Anniversaries</h4>
+        <div class="fest-date">Throughout the year</div>
+        <p style="color:var(--text-muted); font-size:0.85rem;">Anniversaries of schools founded under Guru's inspiration — celebrated as tributes to his vision of universal education. Alumni gather and new scholarships are announced for deserving students.</p>
+      </div>
+    </div>
+
+    <!-- How to Celebrate at Home -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">How to Observe Guru Jayanti at Home</h2>
+    </div>
+
+    <div class="fest-section fade-in">
+      <h3>A Devotee's Guru Jayanti</h3>
+      <div class="ritual-steps">
+        <div class="ritual-step">
+          <div class="step-num">🌅</div>
+          <div class="step-content">
+            <h5>Morning: Puja and Prayers</h5>
+            <p>Light a lamp (nilavilakku) before Guru's photo or idol. Offer flowers, incense, and fruits. Recite the Guru Stuti, Guru Ashtakam, and selected verses from Atmopadesa Satakam.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">📖</div>
+          <div class="step-content">
+            <h5>Morning: Reading</h5>
+            <p>Read from Guru's works — at least one passage from Atmopadesa Satakam or Darsanamala. Reflect on its meaning and how to apply it in daily life.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">🍛</div>
+          <div class="step-content">
+            <h5>Noon: Community Meal</h5>
+            <p>Share a meal with neighbours, friends, and family — ideally including people from different backgrounds, living out Guru's teaching of universal brotherhood and equality.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">🎵</div>
+          <div class="step-content">
+            <h5>Evening: Music and Recitation</h5>
+            <p>Gather family members to recite or listen to Guru's kritis. Songs like Anukampa Dasakam, Daivadasakam, and other compositions create a devotional atmosphere that connects with Guru's spirit.</p>
+          </div>
+        </div>
+        <div class="ritual-step">
+          <div class="step-num">🙏</div>
+          <div class="step-content">
+            <h5>Evening: Commitment</h5>
+            <p>Conclude with a personal commitment to at least one of Guru's principles — to educate oneself, to treat all people equally, to practice cleanliness, or to serve one's community in some way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="poojas.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🪔</span>
+          <h4>Poojas</h4>
+          <p>Rituals & prayers</p>
+        </div>
+      </a>
+      <a href="temples.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🏛️</span>
+          <h4>Temples</h4>
+          <p>Sacred places</p>
+        </div>
+      </a>
+      <a href="kritis.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎵</span>
+          <h4>Kritis</h4>
+          <p>Devotional compositions</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

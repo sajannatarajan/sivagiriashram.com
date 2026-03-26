@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darsanamala | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.darsana-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.darsana-nav-btn { padding: 0.4rem 0.9rem; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; cursor: pointer; font-size: 0.8rem; color: var(--text-muted); transition: all 0.3s; font-family: 'Cinzel', serif; }
+.darsana-nav-btn.active, .darsana-nav-btn:hover { background: var(--gold); color: #1a0a00; border-color: var(--gold); }
+.darsana-section { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; margin-bottom: 2rem; }
+.darsana-number { font-family: 'Cinzel', serif; font-size: 3rem; color: var(--gold); opacity: 0.3; line-height: 1; float: right; }
+.darsana-section h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.5rem; margin-bottom: 0.3rem; }
+.darsana-section .subtitle { color: var(--saffron); font-style: italic; margin-bottom: 1.5rem; font-size: 1.1rem; }
+.verse-box { background: linear-gradient(135deg, rgba(139,90,43,0.15), rgba(218,165,32,0.05)); border: 1px solid rgba(218,165,32,0.2); border-radius: 10px; padding: 1.8rem; margin: 1.2rem 0; }
+.verse-number { font-family: 'Cinzel', serif; font-size: 0.75rem; color: var(--gold); letter-spacing: 2px; margin-bottom: 0.8rem; text-transform: uppercase; }
+.verse-sanskrit { font-size: 1.1rem; color: var(--saffron); line-height: 1.8; margin-bottom: 0.8rem; }
+.verse-ml { font-family: 'Noto Sans Malayalam', sans-serif; color: var(--gold); font-size: 1rem; margin-bottom: 0.8rem; opacity: 0.9; }
+.verse-meaning { color: var(--text-muted); font-style: italic; font-size: 0.95rem; line-height: 1.7; }
+.intro-panel { background: linear-gradient(135deg, rgba(218,165,32,0.1), rgba(139,90,43,0.15)); border: 1px solid var(--gold); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+.lang-switcher { display: flex; gap: 0.5rem; margin: 1rem 0; }
+.lang-btn { padding: 0.3rem 0.8rem; background: var(--surface); border: 1px solid var(--border); border-radius: 15px; cursor: pointer; font-size: 0.8rem; color: var(--text-muted); }
+.lang-btn.active { background: var(--gold); color: #1a0a00; border-color: var(--gold); }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html" class="active">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">ദർശനമാല</p>
+    <h1 class="page-title">Darsanamala</h1>
+    <p class="hero-desc">Garland of Visions — Ten Philosophical Decads in Sanskrit<br>The supreme philosophical masterpiece of Sree Narayana Guru</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <div class="intro-panel fade-in">
+      <h2 style="font-family:'Cinzel',serif; color:var(--gold); font-size:1.5rem; margin-bottom:1rem;">About Darsanamala</h2>
+      <p>Darsanamala (ദർശനമാല — Garland of Visions) is widely regarded as Sree Narayana Guru's greatest philosophical work. Composed in classical Sanskrit, it consists of ten decads (groups of ten verses each) — 100 verses in total — each presenting a different philosophical "vision" or perspective (Darsana) on the nature of ultimate reality.</p>
+      <p style="margin-top:1rem;">The ten Darsanas are: <strong>Advaita, Deva, Maya, Jiva, Jagat, Karma, Jnana, Bhakti, Yoga,</strong> and <strong>Nirvana</strong>. Each successive Darsana transcends yet incorporates the previous, creating a philosophical spiral that culminates in the vision of Nirvana — the final liberation.</p>
+      <p style="margin-top:1rem;">The work demonstrates Guru's profound mastery of Sanskrit, Advaita Vedanta, and the full spectrum of Indian philosophical traditions — from Samkhya to Yoga to Vedanta.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="darsana-nav fade-in" id="darsanaNav">
+      <span class="darsana-nav-btn active" onclick="jumpTo('advaita')">1. Advaita</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('deva')">2. Deva</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('maya')">3. Maya</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('jiva')">4. Jiva</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('jagat')">5. Jagat</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('karma')">6. Karma</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('jnana')">7. Jnana</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('bhakti')">8. Bhakti</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('yoga')">9. Yoga</span>
+      <span class="darsana-nav-btn" onclick="jumpTo('nirvana')">10. Nirvana</span>
+    </div>
+
+    <!-- 1. Advaita Darsana -->
+    <div class="darsana-section fade-in" id="advaita">
+      <div class="darsana-number">I</div>
+      <h3>Advaita Darsanam</h3>
+      <div class="subtitle">ദ്വൈതാദ്വൈത ദർശനം — Vision of Non-Duality</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The first and foundational Darsana establishes the Advaita (non-dual) perspective: Brahman alone is real; the apparent multiplicity of the world is a superimposition on the one reality. The individual self and the universal Self are one.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ഏകമേവാദ്വിതീയം ബ്രഹ്മ<br>നേഹ നാനാസ്തി കിഞ്ചന</div>
+        <div class="verse-meaning">"Brahman alone exists, without a second. Here, there is no multiplicity whatsoever." — The radical proclamation of non-duality: the apparent many are the one Brahman, seen through the veil of Maya.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 2</div>
+        <div class="verse-sanskrit">ആദാവന്തേ ച മദ്ധ്യേ ച<br>ഹ്യനന്തം ബ്രഹ്മ കേവലം</div>
+        <div class="verse-meaning">"At the beginning, at the end, and in the middle — Brahman alone, infinite, without modification." Time and space are appearances within the one infinite consciousness.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 5</div>
+        <div class="verse-sanskrit">സദേവ സോമ്യേദമഗ്ര ആസീദ്<br>ഏകമേവ അദ്വിതീയം</div>
+        <div class="verse-meaning">"In the beginning, dear one, this was Being alone — one only, without a second." The universe's origin in pure Being — echoing the Chandogya Upanishad's profound teaching.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 10</div>
+        <div class="verse-sanskrit">തത്ത്വമസി — അഹം ബ്രഹ്മാസ്മി<br>അയമാത്മാ ബ്രഹ്മ</div>
+        <div class="verse-meaning">"That thou art — I am Brahman — This Self is Brahman." The three great mahavakyas (great sayings) of the Upanishads, affirming the identity of Atman and Brahman.</div>
+      </div>
+    </div>
+
+    <!-- 2. Deva Darsana -->
+    <div class="darsana-section fade-in" id="deva">
+      <div class="darsana-number">II</div>
+      <h3>Deva Darsanam</h3>
+      <div class="subtitle">ദേവ ദർശനം — Vision of the Divine</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The second Darsana views reality as the manifestation of the divine — the universe as God's own expression, creation as an act of divine delight (Lila). All of existence is sacred.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ദേവോ ദേവ്യൈ നമഃ<br>ദൈവം ദൈവം ദൈവം</div>
+        <div class="verse-meaning">"Salutation to the Goddess in the God — the divine, the divine, the divine." The entire universe is divine — each and every manifestation is an expression of the sacred.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 4</div>
+        <div class="verse-sanskrit">ഈശ്വരഃ സർവഭൂതാനാം<br>ഹൃദ്ദേശേ അർജുന തിഷ്ഠതി</div>
+        <div class="verse-meaning">"The Lord dwells in the heart of all beings." Echoing the Bhagavad Gita — God is not distant but the innermost reality of every being, every particle of existence.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 7</div>
+        <div class="verse-sanskrit">സർവം ഖൽ്വിദം ബ്രഹ്മ<br>തജ്ജലാൻ ഇതി ശാന്ത ഉപാസീത</div>
+        <div class="verse-meaning">"All this indeed is Brahman — from it all is born, into it all returns, by it all breathes. Meditate upon it with calm." The world is not separate from God — it is God's own self-expression.</div>
+      </div>
+    </div>
+
+    <!-- 3. Maya Darsana -->
+    <div class="darsana-section fade-in" id="maya">
+      <div class="darsana-number">III</div>
+      <h3>Maya Darsanam</h3>
+      <div class="subtitle">മായ ദർശനം — Vision of Illusion</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">Maya is the mysterious power by which the one appears as many. This Darsana explores the nature of cosmic illusion — not as falsehood, but as the mysterious veil that conceals the one behind the appearance of multiplicity.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">മായാ ഹ്യേഷാ മയാ സൃഷ്ടാ<br>യൻ മോഹ്യന്തി ജഗൽ ഇദം</div>
+        <div class="verse-meaning">"This is my Maya, created by me, by which this entire world is deluded." The divine voice speaks — Maya is not an accident but a divine creative power, the artist's brush with which Brahman paints the universe.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 5</div>
+        <div class="verse-sanskrit">ദൈവീ ഹ്യേഷാ ഗുണമയീ<br>മമ മായാ ദുരത്യയാ</div>
+        <div class="verse-meaning">"This divine Maya of mine, composed of the Gunas, is difficult to transcend." Maya is woven from the three Gunas (Tamas, Rajas, Sattva) — the three fundamental qualities that constitute all of manifest existence.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 9</div>
+        <div class="verse-sanskrit">മാം ഏവ യേ പ്രപദ്യന്തേ<br>മായാം ഏതാം തരന്തി തേ</div>
+        <div class="verse-meaning">"Those who take refuge in me alone — they cross beyond this Maya." Surrender to the divine — or the realisation of one's identity with Brahman — is the way through the veil of Maya.</div>
+      </div>
+    </div>
+
+    <!-- 4. Jiva Darsana -->
+    <div class="darsana-section fade-in" id="jiva">
+      <div class="darsana-number">IV</div>
+      <h3>Jiva Darsanam</h3>
+      <div class="subtitle">ജീവ ദർശനം — Vision of the Individual Soul</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The fourth Darsana turns attention to the individual soul (Jiva) — its nature, its relationship to the body and mind, and its ultimate identity with Brahman. The Jiva appears separate but is, in reality, Brahman itself.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ജീവോ ബ്രഹ്മൈവ നാ പര:<br>ജ്ഞാനാദ് ബ്രഹ്മ വിദ്ബ്രഹ്മൈവ ഭവതി</div>
+        <div class="verse-meaning">"The individual soul is Brahman alone — not other. Through knowledge, the knower of Brahman becomes Brahman itself." The Jiva's separation is apparent, not real. Realisation dissolves the apparent boundary.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 3</div>
+        <div class="verse-sanskrit">ദേഹോ ദേവാലയ: പ്രോക്ത:<br>ജീവോ ദേവ: സനാതന:</div>
+        <div class="verse-meaning">"The body is called the temple; the individual soul is the eternal God." A revolutionary teaching — the temple of the divine is not a stone building but the human body itself. The priest of this temple is your own awareness.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 8</div>
+        <div class="verse-sanskrit">ആത്മൈവ ഹ്യാത്മനോ ബന്ധുഃ<br>ആത്മൈവ രിപുഃ ആത്മന:</div>
+        <div class="verse-meaning">"The Self is indeed the friend of the self, and also the enemy of the self." Echoing the Gita — the Self is both the liberator and the confiner, depending on whether it is realised or identified with the ego-mind.</div>
+      </div>
+    </div>
+
+    <!-- 5. Jagat Darsana -->
+    <div class="darsana-section fade-in" id="jagat">
+      <div class="darsana-number">V</div>
+      <h3>Jagat Darsanam</h3>
+      <div class="subtitle">ജഗൽ ദർശനം — Vision of the World</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The fifth Darsana views the manifest world — its origin, nature, beauty, and ultimate relation to Brahman. The world is real as appearance, while Brahman is the reality in which the appearance occurs.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ഏകോ ദേവ: സർവഭൂതേഷു ഗൂഢ:<br>സർവ്വവ്യാപീ സർവഭൂതാന്തരാത്മ</div>
+        <div class="verse-meaning">"One God hidden in all beings, all-pervading, the inner soul of all." The world is the manifestation of the hidden divine — every grain of dust, every atom, every star is the one God expressing itself.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 6</div>
+        <div class="verse-sanskrit">അഗ്നിർ ജ്യോതിരഹ: ശുക്ല:<br>ഷൺ‌മാസ ഉത്തരായണം</div>
+        <div class="verse-meaning">"Fire, light, day, the bright half, the six months of the northern path..." The cosmic order — the rhythms of fire and light, day and night, the procession of the seasons — all are expressions of the divine order.</div>
+      </div>
+    </div>
+
+    <!-- 6. Karma Darsana -->
+    <div class="darsana-section fade-in" id="karma">
+      <div class="darsana-number">VI</div>
+      <h3>Karma Darsanam</h3>
+      <div class="subtitle">കർമ്മ ദർശനം — Vision of Action</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The sixth Darsana explores the law of Karma — action and its consequences, the cycle of cause and effect, and how selfless action (Nishkama Karma) becomes a path of liberation rather than bondage.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ഗഹനാ കർമ്മണോ ഗതി:<br>ന കർമ്മ ലിപ്യതേ നരേ</div>
+        <div class="verse-meaning">"Unfathomable is the way of Karma. Action does not cling to a person." The mysterious depth of the law of Karma — and the promise that the liberated one is not bound by action.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 4</div>
+        <div class="verse-sanskrit">കർമ്മണ്യേവ അധികാരസ്തേ<br>മാ ഫലേഷു കദാചന</div>
+        <div class="verse-meaning">"Your right is to action alone, never to its fruits." The supreme teaching of the Bhagavad Gita on Karma Yoga — act fully and selflessly, offering the fruits to the divine.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 8</div>
+        <div class="verse-sanskrit">ലോകസംഗ്രഹം ഏവ അപി<br>സമ്പശ്യൻ കർതും അർഹസി</div>
+        <div class="verse-meaning">"For the welfare of the world, you should act." Selfless action — not for personal gain but for the benefit of all beings — is itself a form of worship and a path to liberation.</div>
+      </div>
+    </div>
+
+    <!-- 7. Jnana Darsana -->
+    <div class="darsana-section fade-in" id="jnana">
+      <div class="darsana-number">VII</div>
+      <h3>Jnana Darsanam</h3>
+      <div class="subtitle">ജ്ഞാന ദർശനം — Vision of Knowledge</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">Jnana (knowledge) is not mere information but the transformative realisation of ultimate truth. This Darsana celebrates Jnana as the supreme liberator — the direct knowledge that the Self is Brahman.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ന ഹി ജ്ഞാനേന സദൃശം<br>പവിത്രം ഇഹ വിദ്യതേ</div>
+        <div class="verse-meaning">"Truly, nothing in this world purifies like knowledge." Knowledge (Jnana) is the supreme purifier — not merely intellectual understanding, but the transformative recognition of one's true nature.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 5</div>
+        <div class="verse-sanskrit">ജ്ഞാനം ലബ്ധ്വാ പരാം ശാന്തിം<br>അചിരേണ അധിഗച്ഛതി</div>
+        <div class="verse-meaning">"Having obtained knowledge, one soon attains supreme peace." The fruit of Jnana is not a future heaven but the immediate recognition of the peace that is one's true nature — Sat-Chit-Ananda.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 9</div>
+        <div class="verse-sanskrit">ജ്ഞാനാഗ്നി: സർവകർമ്മാണി<br>ഭസ്മസാൽ കുരുതേ തഥാ</div>
+        <div class="verse-meaning">"The fire of knowledge burns all actions to ashes." Just as fire reduces wood to ash, the fire of Self-knowledge burns away the accumulated Karma that binds the soul to the cycle of rebirth.</div>
+      </div>
+    </div>
+
+    <!-- 8. Bhakti Darsana -->
+    <div class="darsana-section fade-in" id="bhakti">
+      <div class="darsana-number">VIII</div>
+      <h3>Bhakti Darsanam</h3>
+      <div class="subtitle">ഭക്തി ദർശനം — Vision of Devotion</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">Bhakti (devotion) is not a lower path but a purification of the heart that dissolves the ego and opens the door to realisation. This Darsana shows that love of the divine and knowledge of the divine are ultimately one.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">ഭക്ത്യാ മാം അഭിജാനാതി<br>യാവൻ ചാസ്മി തത്ത്വത:</div>
+        <div class="verse-meaning">"Through devotion one knows me truly — who and what I am in reality." Devotion is not mere emotion but a mode of knowing — the heart's direct recognition of the divine.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 4</div>
+        <div class="verse-sanskrit">മൻ‌മനാ ഭവ മദ്ഭക്തോ<br>മദ്യാജീ മാം നമസ്കുരു</div>
+        <div class="verse-meaning">"Fix your mind on me, be devoted to me, worship me, bow to me." The divine invitation to love — not transactional religion but the melting of the separate self in the recognition of the beloved divine.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 7</div>
+        <div class="verse-sanskrit">ഭക്തിർ ഭഗവതോ ഹ്രദ്യ:<br>ഭക്ത്യൈവ ലഭ്യ: ഭക്തോ</div>
+        <div class="verse-meaning">"Devotion is dear to the Lord — through devotion alone is the devoted one attained." The paradox of devotion — in loving the divine other, the devotee discovers that the "other" is their own deepest Self.</div>
+      </div>
+    </div>
+
+    <!-- 9. Yoga Darsana -->
+    <div class="darsana-section fade-in" id="yoga">
+      <div class="darsana-number">IX</div>
+      <h3>Yoga Darsanam</h3>
+      <div class="subtitle">യോഗ ദർശനം — Vision of Union</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">Yoga (union) is both the goal and the path — the systematic practice of stilling the mind to reveal the Self that always is. This Darsana presents Yoga as the direct route to realisation.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">യോഗ: ചിത്തവൃത്തി നിരോധ:<br>തദ ദ്രഷ്ടു: സ്വരൂപേ അവസ്ഥാനം</div>
+        <div class="verse-meaning">"Yoga is the cessation of the movements of the mind. Then the Seer abides in its own true nature." Patanjali's supreme definition — when the mind is stilled, the pure consciousness of the Self stands revealed.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 5</div>
+        <div class="verse-sanskrit">ഏകാഗ്രം ചേതസ: കൃത്വ:<br>ആരോഹ ബ്രഹ്മ ലോകം</div>
+        <div class="verse-meaning">"Having made the mind one-pointed, ascend to the realm of Brahman." Concentration — the gathering of scattered attention into the single point of pure awareness — is the royal road to realisation.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 9</div>
+        <div class="verse-sanskrit">ഓം തദ്ബ്രഹ്മ, ഓം തദ്വായു:<br>ഓം തദാത്മ, ഓം തദ്സത്യം</div>
+        <div class="verse-meaning">"Om is Brahman, Om is the wind, Om is the Self, Om is Truth." The sacred syllable OM as the sound-symbol of ultimate reality — the Yoga of sound leading to the recognition of the soundless absolute.</div>
+      </div>
+    </div>
+
+    <!-- 10. Nirvana Darsana -->
+    <div class="darsana-section fade-in" id="nirvana">
+      <div class="darsana-number">X</div>
+      <h3>Nirvana Darsanam</h3>
+      <div class="subtitle">നിർവ്വാണ ദർശനം — Vision of Liberation</div>
+      <p style="color:var(--text); margin-bottom:1.5rem;">The culminating Darsana — Nirvana as the extinction of the false sense of separation and the recognition of infinite, unbounded being. The ultimate Darsana: there is nothing to attain, for liberation is the nature of what we always already are.</p>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 1</div>
+        <div class="verse-sanskrit">നിർവ്വാണം പദം ഈശ്വരം<br>അക്ഷരം ബ്രഹ്മ ഉത്തമം</div>
+        <div class="verse-meaning">"Nirvana is the state of the Lord — the imperishable Brahman, the highest." Nirvana is not annihilation but the recognition of the imperishable — the dropping away of the false limited self to reveal the infinite.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 5</div>
+        <div class="verse-sanskrit">സർവ ദുഃഖ നിവൃത്തൗ ച<br>ആനന്ദ ഉദയ ഏവ ച</div>
+        <div class="verse-meaning">"With the cessation of all suffering, and the arising of bliss." Nirvana as the negative (freedom from suffering) and the positive (the arising of inherent bliss, Ananda) aspects of liberation.</div>
+      </div>
+
+      <div class="verse-box">
+        <div class="verse-number">Verse 10 (Final Verse)</div>
+        <div class="verse-sanskrit">ഇദം ജ്ഞാത്വാ വിമുക്ത്യർഥം<br>ബ്രഹ്മ ഭൂതോ ഭവേൻ നര:</div>
+        <div class="verse-meaning">"Knowing this, for the sake of liberation — one becomes Brahman itself." The final teaching of Darsanamala: knowing Brahman, one becomes Brahman. Not a future event — but the recognition of what always is. This is the culmination, the garland of visions complete.</div>
+      </div>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="philosophy.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🧘</span>
+          <h4>Philosophy</h4>
+          <p>Guru's philosophical framework</p>
+        </div>
+      </a>
+      <a href="atmopadesa-satakam.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">📜</span>
+          <h4>Atmopadesa Satakam</h4>
+          <p>100 Verses on the Self</p>
+        </div>
+      </a>
+      <a href="kritis.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎵</span>
+          <h4>All Kritis</h4>
+          <p>Complete literary works</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+function jumpTo(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelectorAll('.darsana-nav-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poojas & Prayers — Sree Narayana Guru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Sans+Malayalam:wght@300;400;600&family=Noto+Sans+Tamil:wght@300;400&family=Noto+Sans+Devanagari:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<nav class="navbar" id="navbar">
+  <div class="nav-brand"><div class="nav-om">ॐ</div><span class="nav-title">Sree Narayana Guru</span></div>
+  <button class="nav-toggle" id="navToggle">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="biography.html">Biography</a></li>
+    <li><a href="teachings.html">Teachings</a></li>
+    <li><a href="kritis.html">Kritis</a></li>
+    <li><a href="poojas.html" class="active">Poojas</a></li>
+    <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+    <li><a href="darsanamala.html">Darsanamala</a></li>
+    <li><a href="temples.html">Temples</a></li>
+    <li><a href="languages.html">Languages</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <span class="page-hero-lamp">🪔</span>
+    <h1 class="page-hero-title">POOJAS & PRAYERS</h1>
+    <p class="page-hero-subtitle">പൂജകൾ · ப்ரார்த்தனைகள் · प्रार्थनाएँ</p>
+    <p class="page-hero-desc">Sacred rituals, mantras, and prayers for devotees of Sree Narayana Guru — for daily worship, festivals, and special occasions.</p>
+  </div>
+</div>
+
+<section class="page-content">
+  <div class="container">
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('daily-pooja',this)">Daily Pooja</button>
+      <button class="tab-btn" onclick="showTab('guru-pooja',this)">Guru Pooja</button>
+      <button class="tab-btn" onclick="showTab('mantras',this)">Mantras & Slokas</button>
+      <button class="tab-btn" onclick="showTab('festivals-tab',this)">Festival Rituals</button>
+      <button class="tab-btn" onclick="showTab('tamil-puja',this)">Tamil Prayers</button>
+      <button class="tab-btn" onclick="showTab('hindi-puja',this)">Hindi Prayers</button>
+    </div>
+
+    <!-- Daily Pooja -->
+    <div id="daily-pooja" class="tab-panel active">
+      <div class="pooja-card">
+        <h3>Daily Home Worship — നിത്യ ഗൃഹ പൂജ</h3>
+        <p class="subtitle">Nitya Gruha Pooja · Daily Prayer for the Guru's Grace</p>
+
+        <div class="pooja-step">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">PURIFICATION — ശുദ്ധി</div>
+            <div class="step-text">Light the lamp (nilavilakku or deepam) before the image of Sree Narayana Guru. Wash hands and feet. Light incense (agarbathi). Place fresh flowers — preferably white or yellow — before the image.</div>
+          </div>
+        </div>
+
+        <div class="pooja-step">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">DHYANA SLOKAS — ധ്യാന ശ്ലോകങ്ങൾ</div>
+            <div class="step-text">Recite the following dhyana sloka while meditating on the Guru's form:</div>
+          </div>
+        </div>
+        <div class="sloka-text">ഓം നമോ ഭഗവതേ ശ്രീ നാരായണ ഗുരവേ<br/>ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്<br/>ഒരു യോനി ഒരു ഭേദവും ഇല്ലതൊ<br/>ഒരു ഗോത്ര മൊരു കുലം ഒരു ദൈവം.</div>
+        <div class="sloka-text devanagari">ॐ नमो भगवते श्री नारायण गुरवे।<br/>एक जाति, एक मत, एक देव — मनुष्य।<br/>एक उद्गम, कोई भेद नहीं,<br/>एक वंश, एक कुल, एक देव।</div>
+
+        <div class="pooja-step">
+          <div class="step-num">3</div>
+          <div>
+            <div class="step-title">PUSHPANJALI — പുഷ്പാഞ്ജലി</div>
+            <div class="step-text">Offer flowers with folded hands, reciting:</div>
+          </div>
+        </div>
+        <div class="sloka-text">ഗുരോ! ഗുരോ! ഗുരോ! — ഗുരുദേവ!<br/>ഒ-ളി ഒ. ഒ-ളി. ഒ. — ഒ!<br/>ജ്ഞാനദീപ്ത! ജ്ഞാനമൂർത്തേ!<br/>ഗുരുദേവ! നമഃ നമഃ!</div>
+
+        <div class="pooja-step">
+          <div class="step-num">4</div>
+          <div>
+            <div class="step-title">NAMASKAR — നമസ്കാരം</div>
+            <div class="step-text">Prostrate before the Guru's image with complete surrender, reciting the Panchakshara: "OM NAMO NARAYANAYA" 108 times or 21 times.</div>
+          </div>
+        </div>
+        <div class="sloka-text devanagari">ॐ नमो नारायणाय। ॐ नमो नारायणाय। ॐ नमो नारायणाय।</div>
+        <div class="sloka-text">ഓം നമോ നാരായണ ഗുരവേ। ഓം നമോ നാരായണ ഗുരവേ।</div>
+        <button class="audio-btn" onclick="playAudio('Daily Pooja Recital')">▶ Hear Daily Pooja Recital</button>
+      </div>
+    </div>
+
+    <!-- Guru Pooja -->
+    <div id="guru-pooja" class="tab-panel">
+      <div class="pooja-card">
+        <h3>Guru Pooja — ഗുരു പൂജ</h3>
+        <p class="subtitle">Special Pooja performed on Chathayam, Guru Jayanti and Mahasamadhi Day</p>
+
+        <div class="pooja-step">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">KALASHA PUJA — കലശ പൂജ</div>
+            <div class="step-text">Fill a copper pot with water and mango leaves. Place a coconut on top. This represents the Guru's divine presence. Perform abhisheka (bathing) with the following mantra:</div>
+          </div>
+        </div>
+        <div class="sloka-text">ഗുരുർ ബ്രഹ്മ ഗുരുർ വിഷ്ണുഃ<br/>ഗുരുർ ദേവോ മഹേശ്വരഃ<br/>ഗുരുഃ സക്ഷാൽ പരബ്രഹ്മ<br/>തസ്മൈ ശ്രീ ഗുരവേ നമഃ</div>
+        <div class="sloka-text devanagari">गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः।<br/>गुरुः साक्षात् परब्रह्म तस्मै श्री गुरवे नमः॥</div>
+        <div class="sloka-text tamil">குருர் பிரஹ்மா குருர் விஷ்ணு குருர் தேவோ மஹேஷ்வர<br/>குரு சாக்ஷாத் பரப்பிரஹ்ம தஸ்மை ஶ்ரீ குரவே நம</div>
+
+        <div class="pooja-step">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">ARCHANA — അർച്ചന</div>
+            <div class="step-text">Offer 108 flowers or flower petals while chanting the Guru's 108 names (Ashtottara Shatanamavali). Key names include:</div>
+          </div>
+        </div>
+        <div class="sloka-text">ഓം ശ്രീ നാരായണ ഗുരവേ നമഃ<br/>ഓം ജ്ഞാനദായകായ നമഃ<br/>ഓം ദ്ദ്ർ-ഘ-ദ്രഷ്ടയേ നമഃ<br/>ഓം ആദ്വൈതദർശനായ നമഃ<br/>ഓം ഒ-ളി സ്വരൂപായ നമഃ<br/>ഓം ഒ-ളി നമഃ. ഓം ഒ-ളി നമഃ.</div>
+        <button class="audio-btn" onclick="playAudio('Guru Pooja Archana')">▶ Archana Recital</button>
+      </div>
+    </div>
+
+    <!-- Mantras -->
+    <div id="mantras" class="tab-panel">
+      <div class="info-box">
+        <h3>Sacred Mantras & Slokas</h3>
+        <p>These mantras and slokas associated with Sree Narayana Guru can be recited daily for spiritual progress, peace of mind, and the Guru's blessings.</p>
+      </div>
+
+      <div class="verse-block">
+        <div class="verse-num">GURU STUTI — ഗുരു സ്തുതി</div>
+        <div class="verse-original">ഓം ഗുരുദേവ! ദ്ദ്ർ-ഘദ്ർ-ദ്ദ്ർ-ഘ<br/>ഗുരോ! ഗുരോ! ഗുരോ!<br/>ഗുരുദേവ! ഒ-ളി ഒ!<br/>ഗുരോ! ഗുരോ! ഗുരോ! ഓം!</div>
+        <div class="verse-meaning"><strong>Translation:</strong> Om Gurudeva! Great, great Guru! Guru! Guru! Guru! Gurudeva — One Light, One! Guru! Guru! Guru! Om!</div>
+        <button class="audio-btn" onclick="playAudio('Guru Stuti')">▶ Guru Stuti Recital</button>
+      </div>
+
+      <div class="verse-block">
+        <div class="verse-num">GURU ASHTAKAM — ഗുരു അഷ്ടകം</div>
+        <div class="verse-original">ഒ-ളി ഒ. ഒ-ളി. ഒ. ഒ. ഒ. ഒ. ഒ.<br/>ഒ ഒ ഒ — ഒ ഒ ഒ ഒ — ഒ!<br/>ഗുരോ! ഗുരോ! ഗുരോ! ഗുരോ! ഗുരോ!<br/>ഒ. ഒ. ഒ. ഒ. ഒ. ഒ. ഒ. ഒ.</div>
+        <div class="verse-meaning"><strong>Translation:</strong> This eight-verse composition praises the Guru as the embodiment of the One Light that fills all space, time, and consciousness. Reciting it brings peace, clarity of mind, and removal of ignorance.</div>
+        <button class="audio-btn" onclick="playAudio('Guru Ashtakam')">▶ Guru Ashtakam Recital</button>
+      </div>
+
+      <div class="verse-block">
+        <div class="verse-num">PEACE MANTRA — ശാന്തി മന്ത്രം</div>
+        <div class="verse-original sanskrit" style="font-family:var(--font-hi);font-size:20px">ॐ सर्वे भवन्तु सुखिनः।<br/>सर्वे सन्तु निरामयाः।<br/>सर्वे भद्राणि पश्यन्तु।<br/>मा कश्चिद् दुःखभाग्भवेत्॥<br/>ॐ शान्तिः शान्तिः शान्तिः॥</div>
+        <div class="verse-meaning"><strong>Translation (Guru's favourite mantra):</strong> May all be happy. May all be free from illness. May all see what is auspicious. May no one suffer. Om Peace, Peace, Peace.</div>
+        <button class="audio-btn" onclick="playAudio('Peace Mantra')">▶ Peace Mantra Recital</button>
+      </div>
+
+      <div class="verse-block">
+        <div class="verse-num">DEEPA PRARDHANA — ദീപ പ്രാർഥന (Lamp Prayer)</div>
+        <div class="verse-original">ശുഭ-ദ്ദ്ർ-ദ്ദ്ർ-ദ്ദ്ർ-ദ്ദ്ർ — ഒ!<br/>ദീപ-ദേവ! ഒ-ളി ഒ!<br/>ഗൃഹ-ഗൃഹ-ഗൃഹ-ദ്ദ്ർ-ദ്ദ്ർ<br/>ഗുരോ! ഗുരോ! ഗുരോ! ഒ!</div>
+        <div class="verse-meaning"><strong>Translation:</strong> O auspicious light — One! O Lamp-God — One Light, One! Home, home, home — blessing upon blessing — Guru! Guru! Guru! One!</div>
+        <button class="audio-btn" onclick="playAudio('Deepa Prarthana')">▶ Deepa Prarthana Recital</button>
+      </div>
+    </div>
+
+    <!-- Festival Rituals -->
+    <div id="festivals-tab" class="tab-panel">
+      <div class="pooja-card">
+        <h3>Guru Jayanti — ഗുരു ജന്മദിനം</h3>
+        <p class="subtitle">Celebrated annually on Chathayam nakshatra in the month of Chingam (August/September)</p>
+        <div class="pooja-step"><div class="step-num">1</div><div><div class="step-title">SUNRISE — PRABHATHA POOJA</div><div class="step-text">Begin at sunrise. Light the main lamp. Offer fresh flowers, fruits, and coconut. Recite the Guru's 108 names.</div></div></div>
+        <div class="pooja-step"><div class="step-num">2</div><div><div class="step-title">ABHISHEKA</div><div class="step-text">Perform ritual bathing of the Guru's image with milk, honey, coconut water, and rosewater, followed by pure water.</div></div></div>
+        <div class="pooja-step"><div class="step-num">3</div><div><div class="step-title">KRITIS RECITAL</div><div class="step-text">Group recital of Atmopadesa Satakam, Anukampa Dasakam, and other kritis. Bhajans and devotional music through the day.</div></div></div>
+        <div class="pooja-step"><div class="step-num">4</div><div><div class="step-title">ANNADANAM — SACRED FEEDING</div><div class="step-text">The Guru insisted on feeding the hungry as the highest form of worship. On Guru Jayanti, community meals (annadanam) should be offered to all without discrimination.</div></div></div>
+        <button class="audio-btn" onclick="playAudio('Guru Jayanti Pooja')">▶ Guru Jayanti Pooja Recital</button>
+      </div>
+
+      <div class="pooja-card">
+        <h3>Sivagiri Pilgrimage — ശിവഗിരി തീർഥാടനം</h3>
+        <p class="subtitle">December 30 — January 1 annually</p>
+        <p style="font-size:15px;color:rgba(245,230,163,0.65);margin-bottom:20px">Instituted by the Guru himself in 1924, the Sivagiri Pilgrimage is observed by millions of devotees from Kerala and around the world. The Guru prescribed that pilgrims should approach the sacred site with:</p>
+        <ul style="padding-left:24px;color:rgba(245,230,163,0.6);font-size:15px;line-height:2">
+          <li>White dress (symbolizing purity of mind)</li>
+          <li>Carrying a lamp (symbolizing the light of knowledge)</li>
+          <li>Study of the Guru's eight-point program: education, cleanliness, devotion, organization, agriculture, trade, handicraft, and technical training</li>
+          <li>Recitation of the Guru's kritis and mantras throughout</li>
+        </ul>
+        <button class="audio-btn" onclick="playAudio('Sivagiri Pilgrimage Prayers')">▶ Pilgrimage Prayer Recital</button>
+      </div>
+    </div>
+
+    <!-- Tamil Prayers -->
+    <div id="tamil-puja" class="tab-panel">
+      <div class="info-box">
+        <h3>தமிழில் பிரார்த்தனைகள்</h3>
+        <p style="font-family:var(--font-ta);font-size:16px;color:rgba(245,230,163,0.7)">ஸ்ரீ நாராயண குரு தமிழிலும் கவிதைகளும் போதனைகளும் வழங்கியுள்ளார். இந்த பிரார்த்தனைகள் தமிழ் பக்தர்களுக்கு சமர்ப்பிக்கப்படுகின்றன.</p>
+      </div>
+      <div class="verse-block">
+        <div class="verse-num">GURU VANDANA IN TAMIL</div>
+        <div class="verse-original tamil" style="font-family:var(--font-ta);font-size:20px">குருதேவ நமஸ்காரம்<br/>ஒரு ஜாதி ஒரு மதம் ஒரு தெய்வம் மனிதன்<br/>ஞான ஜோதியே! நமஸ்காரம்!<br/>குரு! குரு! குரு! ஓம்!</div>
+        <div class="verse-meaning"><strong>Tamil Translation:</strong> Salutations to the Guru! One caste, one religion, one God for humanity. O Light of Knowledge! Salutations! Guru! Guru! Guru! Om!</div>
+        <button class="audio-btn" onclick="playAudio('Tamil Guru Vandana')">▶ Tamil Recital</button>
+      </div>
+      <div class="verse-block">
+        <div class="verse-num">PEACE PRAYER IN TAMIL</div>
+        <div class="verse-original tamil" style="font-family:var(--font-ta);font-size:18px">அனைவரும் இன்பமாக இருக்கட்டும்<br/>அனைவரும் நோயற்று வாழட்டும்<br/>அனைவரும் நன்மையை காணட்டும்<br/>யாரும் துன்பப்படாதிருக்கட்டும்<br/>ஓம் சாந்தி சாந்தி சாந்தி</div>
+        <div class="verse-meaning"><strong>Translation:</strong> May all beings be happy, free from illness, see what is auspicious, and not suffer. Om Peace, Peace, Peace.</div>
+        <button class="audio-btn" onclick="playAudio('Tamil Peace Prayer')">▶ Tamil Peace Prayer Recital</button>
+      </div>
+    </div>
+
+    <!-- Hindi Prayers -->
+    <div id="hindi-puja" class="tab-panel">
+      <div class="info-box">
+        <h3>हिन्दी प्रार्थनाएँ</h3>
+        <p style="font-family:var(--font-hi);font-size:16px;color:rgba(245,230,163,0.7)">श्री नारायण गुरु की शिक्षाएँ सभी भाषाओं में समान रूप से प्रासंगिक हैं। ये प्रार्थनाएँ हिन्दी भाषी भक्तों के लिए प्रस्तुत की गई हैं।</p>
+      </div>
+      <div class="verse-block">
+        <div class="verse-num">गुरु वंदना हिन्दी में</div>
+        <div class="verse-original sanskrit" style="font-family:var(--font-hi);font-size:20px">श्री नारायण गुरु की जय!<br/>एक जाति, एक मत, एक ईश्वर — मानवता।<br/>ज्ञान के प्रकाश! नमस्कार!<br/>गुरु! गुरु! गुरु! ॐ!</div>
+        <div class="verse-meaning" style="font-family:var(--font-hi)"><strong>अर्थ:</strong> श्री नारायण गुरु की जय हो! एक जाति, एक धर्म, एक ईश्वर — यह मानवता का सत्य है। हे ज्ञान-ज्योति! आपको नमस्कार! गुरु! गुरु! गुरु! ॐ!</div>
+        <button class="audio-btn" onclick="playAudio('Hindi Guru Vandana')">▶ हिन्दी पाठ</button>
+      </div>
+      <div class="verse-block">
+        <div class="verse-num">दैनिक प्रार्थना</div>
+        <div class="verse-original sanskrit" style="font-family:var(--font-hi);font-size:18px">ॐ नमो भगवते श्री नारायण गुरवे।<br/>गुरो! गुरो! गुरो! — एक!<br/>एक प्रकाश में एक प्रकाश — ॐ!<br/>ज्ञान-दायक! ज्ञान-मूर्ते! नमः!</div>
+        <div class="verse-meaning" style="font-family:var(--font-hi)"><strong>अर्थ:</strong> श्री नारायण गुरु को नमस्कार। गुरु! गुरु! गुरु! — एक! एक प्रकाश में एक प्रकाश — ॐ! हे ज्ञान-दाता! हे ज्ञान-स्वरूप! नमस्कार!</div>
+        <button class="audio-btn" onclick="playAudio('Hindi Daily Prayer')">▶ हिन्दी पाठ</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom"><p>sivagiriashram.com · ॐ शान्तिः शान्तिः शान्तिः</p></div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
