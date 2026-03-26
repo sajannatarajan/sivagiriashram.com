@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teachings of Sree Narayana Guru | Sivagiri Ashram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.teaching-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; }
+.teaching-section h3 { font-family: 'Cinzel', serif; color: var(--gold); font-size: 1.4rem; margin-bottom: 1rem; }
+.quote-block { background: linear-gradient(135deg, rgba(139,90,43,0.15), rgba(218,165,32,0.08)); border-left: 4px solid var(--gold); padding: 1.5rem 2rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0; }
+.quote-block .original { font-family: 'Noto Sans Malayalam', sans-serif; font-size: 1.2rem; color: var(--gold); margin-bottom: 0.5rem; }
+.quote-block .translation { font-style: italic; color: var(--text-muted); font-size: 1rem; }
+.principle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.principle-card { background: linear-gradient(135deg, var(--surface), rgba(139,90,43,0.1)); border: 1px solid var(--border); border-radius: 12px; padding: 1.8rem; transition: transform 0.3s, box-shadow 0.3s; }
+.principle-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(218,165,32,0.15); }
+.principle-number { font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--gold); opacity: 0.4; line-height: 1; }
+.principle-card h4 { font-family: 'Cinzel', serif; color: var(--saffron); font-size: 1rem; margin: 0.5rem 0; }
+.teaching-pillar { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem; background: var(--surface); border-radius: 10px; margin-bottom: 1rem; border: 1px solid var(--border); }
+.pillar-icon { font-size: 2.5rem; flex-shrink: 0; }
+.comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.comparison-table th { background: linear-gradient(135deg, var(--saffron), var(--gold)); color: #1a0a00; padding: 1rem; font-family: 'Cinzel', serif; font-weight: 600; }
+.comparison-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+.comparison-table tr:nth-child(even) td { background: rgba(139,90,43,0.1); }
+.lang-tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.lang-tab { padding: 0.4rem 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; cursor: pointer; font-size: 0.85rem; color: var(--text-muted); transition: all 0.3s; }
+.lang-tab.active, .lang-tab:hover { background: var(--gold); color: #1a0a00; border-color: var(--gold); }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar"><div class="nav-inner">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Sivagiri Ashram</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="teachings.html" class="active">Teachings</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="atmopadesa-satakam.html">Atmopadesa Satakam</a></li>
+      <li><a href="darsanamala.html">Darsanamala</a></li>
+      <li><a href="kritis.html">Kritis</a></li>
+      <li><a href="poojas.html">Poojas</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="festivals.html">Festivals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="page-hero-content fade-in">
+    <p class="hero-subtitle">The Wisdom Path</p>
+    <h1 class="page-title">Teachings of Sree Narayana Guru</h1>
+    <p class="hero-desc">The transformative wisdom that changed the course of Kerala's history — and the human spirit</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+
+    <!-- Core Message -->
+    <div class="section-header fade-in">
+      <h2 class="section-title">The Central Message</h2>
+    </div>
+
+    <div class="quote-block fade-in" style="text-align:center; margin-bottom:3rem;">
+      <div class="original" style="font-size:1.6rem; margin-bottom:1rem;">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</div>
+      <div class="translation" style="font-size:1.2rem; color:var(--saffron);">One Caste, One Religion, One God for Humanity</div>
+      <div style="margin-top:1rem; color:var(--text-muted); font-size:0.9rem;">— The foundational teaching that shook the foundations of caste discrimination</div>
+    </div>
+
+    <!-- Three Pillars -->
+    <div class="section-header fade-in">
+      <h2 class="section-title">The Three Pillars</h2>
+      <p class="section-subtitle">Education, Cleanliness, and Devotion — the path Guru prescribed for liberation</p>
+    </div>
+
+    <div class="principle-grid fade-in">
+      <div class="principle-card">
+        <div class="principle-number">01</div>
+        <h4>Vidyakond Swatantrar Bhavikka</h4>
+        <p style="color:var(--text); margin:0.8rem 0;">Through Education, Attain Freedom</p>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Guru saw ignorance as the root of all social evils. He established hundreds of schools for the oppressed, believing education was the first step toward emancipation.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">02</div>
+        <h4>Sanghatiyakond Shaktikal Praptikka</h4>
+        <p style="color:var(--text); margin:0.8rem 0;">Through Organisation, Gain Strength</p>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Unity among the downtrodden was essential. Guru organised communities, founded the SNDP, and created institutions that gave collective strength to the marginalised.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">03</div>
+        <h4>Thozhilkond Samridhhi Varuttuka</h4>
+        <p style="color:var(--text); margin:0.8rem 0;">Through Industry, Achieve Prosperity</p>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Economic independence was critical for dignity. Guru encouraged trade, craftsmanship and self-reliance as pathways to genuine social equality.</p>
+      </div>
+    </div>
+
+    <!-- Social Teachings -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Social Teachings</h2>
+      <p class="section-subtitle">Revolutionary wisdom on caste, equality and human dignity</p>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>On Caste Discrimination</h3>
+      <div class="quote-block">
+        <div class="original">ജാതി ഭേദം മതദ്വേഷം ഏതുമില്ലാതെ സർവ്വരും<br>സോദരത്വേന വാഴുന്ന മാതൃഭൂമി ജയിക്കണേ</div>
+        <div class="translation">"Without caste differences, without religious hatred, may the motherland where all live as brothers and sisters prosper"</div>
+      </div>
+      <p>Sree Narayana Guru was born in a society where caste discrimination was entrenched and brutal. He confronted this directly — not through anger, but through the construction of a new moral and spiritual universe in which caste was irrelevant.</p>
+      <p style="margin-top:1rem;">His famous response when asked about his caste: <em>"My caste is humanity."</em> When he consecrated temples, he opened them to all, regardless of caste — a radical act in 19th-century Kerala.</p>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>The Aruvippuram Proclamation (1888)</h3>
+      <p>When Guru consecrated the Shiva idol at Aruvippuram — the first consecration by a non-Brahmin in Kerala — he declared: <em>"Here we consecrate not a Brahmin's Shiva, but the Shiva of all people."</em></p>
+      <p style="margin-top:1rem;">This act electrified Kerala. Upper-caste priests protested: "You have no authority to consecrate a Shiva temple." Guru's reply became legendary:</p>
+      <div class="quote-block">
+        <div class="original">ഇത് ബ്രാഹ്മണ ശിവനല്ല, ഇത് നായർ ശിവനാണ്</div>
+        <div class="translation">"This is not the Brahmin's Shiva — this is the Shiva of all people."</div>
+      </div>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>On Religious Unity</h3>
+      <div class="quote-block">
+        <div class="original">ഒരേ ജാതിയാണ് ദൈവം ഒരേ ദൈവം</div>
+        <div class="translation">"There is one God, one species — humanity"</div>
+      </div>
+      <p>Guru transcended religious sectarianism. He consecrated temples for different deities — Shiva, Vishnu, Saraswati, Kali — but declared that all these were expressions of the same ultimate reality. He even installed a mirror in one temple with the inscription <em>"Whatever you worship, that is you."</em></p>
+    </div>
+
+    <!-- The Eight-Point Programme -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">The Sivagiri Eight-Point Programme</h2>
+      <p class="section-subtitle">Proclaimed at the 1904 Sivagiri Pilgrimage — the blueprint for social transformation</p>
+    </div>
+
+    <div class="principle-grid fade-in">
+      <div class="principle-card">
+        <div class="principle-number">1</div>
+        <h4>Education (വിദ്യ)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Universal education as the foundation of human liberation and social progress.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">2</div>
+        <h4>Cleanliness (ശുചിത്വം)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Physical and spiritual purity — of body, mind, home, and environment.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">3</div>
+        <h4>Devotion (ഭക്തി)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">True devotion to God as the inner purification that removes ego and selfishness.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">4</div>
+        <h4>Organisation (സംഘടന)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Unity among communities to gain collective strength and resist oppression.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">5</div>
+        <h4>Agriculture (കൃഷി)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Economic self-reliance through farming and cultivation of the land.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">6</div>
+        <h4>Handicrafts (കൈത്തൊഴിൽ)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Skilled trade and craftsmanship as pathways to economic independence and dignity.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">7</div>
+        <h4>Trade (വ്യാപാരം)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Commerce and business to achieve financial freedom and community prosperity.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">8</div>
+        <h4>Technical Training (സാങ്കേതിക വിദ്യ)</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Modern technical knowledge to equip communities for the contemporary world.</p>
+      </div>
+    </div>
+
+    <!-- Spiritual Teachings -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Spiritual Teachings</h2>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>Advaita Vedanta — Non-Dualism</h3>
+      <p>Guru's spirituality was firmly grounded in Advaita (non-dualism) — the teaching that the individual soul (Atman) and the universal consciousness (Brahman) are ultimately one and the same.</p>
+      <div class="quote-block">
+        <div class="original">ഒരിടത്ത് ഒരു ജനം ഒരു ദൈവം ഒരു ആചാരം</div>
+        <div class="translation">"In one place: one people, one God, one way of life"</div>
+      </div>
+      <p style="margin-top:1rem;">Unlike orthodox Brahminical Advaita, Guru democratised this philosophy. He taught that the realisation of non-duality was available to all human beings — regardless of birth, caste, or creed. The path was open to everyone.</p>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>The Nature of the Self</h3>
+      <p>The first verse of Atmopadesa Satakam (100 Verses of Self-Instruction) encapsulates Guru's teaching on the nature of consciousness:</p>
+      <div class="quote-block">
+        <div class="original">ഒന്നേ ഉള്ളൂ ഉണ്ടതിനൊരു ഭേദം<br>ഉണ്ടെന്ന് ഉള്ളതൊ ഇല്ലെന്ന്<br>ഉള്ളതൊ ഇല്ലെന്ന് ഉണ്ടു ഉഭയ<br>ഭ്രാന്ത് ഉണ്ടു ഒന്നതിൻ ആദി</div>
+        <div class="translation">"There is only one thing; it seems to be many. Whether this 'seeming many' truly exists or not — that is the perplexity of duality. The origin of this confusion is the One itself."</div>
+      </div>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <h3>On Prayer and Worship</h3>
+      <div class="quote-block">
+        <div class="original">ദൈവം ഒന്ന്, ജനം ഒന്ന്, ഇനി ഭേദ ചിന്ത ഉള്ളതൊ</div>
+        <div class="translation">"God is one, people are one — why then this thought of difference?"</div>
+      </div>
+      <p>Guru believed true worship was not the mechanical performance of rituals, but the transformation of the inner being. He said: <em>"Do not pray for material things — pray to become worthy of what you desire."</em></p>
+      <p style="margin-top:1rem;">He also taught that service to human beings was the highest form of worship: <em>"Whatever you do to a human being, you do to God."</em></p>
+    </div>
+
+    <!-- Teachings on Ethics -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Ethical Teachings</h2>
+    </div>
+
+    <div class="principle-grid fade-in">
+      <div class="teaching-pillar" style="background: var(--surface); border-radius:10px; padding:1.5rem; border:1px solid var(--border); margin-bottom:1rem;">
+        <div class="pillar-icon">🌿</div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.5rem;">Ahimsa — Non-Violence</h4>
+          <p style="color:var(--text-muted); font-size:0.9rem;">Guru was a staunch advocate of non-violence in thought, word and action. He strongly opposed animal sacrifice in temples, saying "God does not desire the killing of his own creation." He eventually proclaimed: <em>"One should not kill, and one should not cause others to kill."</em></p>
+        </div>
+      </div>
+      <div class="teaching-pillar">
+        <div class="pillar-icon">🕊️</div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.5rem;">Compassion for All</h4>
+          <p style="color:var(--text-muted); font-size:0.9rem;">His Anukampa Dasakam (Ten Verses on Compassion) expresses boundless compassion for all living beings as an expression of the divine. He taught that one who has realised the Self sees themselves in all beings.</p>
+        </div>
+      </div>
+      <div class="teaching-pillar">
+        <div class="pillar-icon">⚖️</div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.5rem;">Justice and Dignity</h4>
+          <p style="color:var(--text-muted); font-size:0.9rem;">Guru believed no human being could be spiritually debased by birth. Every soul carried the divine spark. Social hierarchies were human constructions, not divine ordinances. Dignity was the birthright of every person.</p>
+        </div>
+      </div>
+      <div class="teaching-pillar">
+        <div class="pillar-icon">🤝</div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif; color:var(--gold); margin-bottom:0.5rem;">Brotherhood and Service</h4>
+          <p style="color:var(--text-muted); font-size:0.9rem;">Guru's vision was fraternal: all humans as children of the same divine source. He established institutions that served all — schools, hospitals, temples, libraries — open to everyone regardless of caste or creed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- On Women -->
+    <div class="teaching-section fade-in">
+      <h3>On Women's Rights and Dignity</h3>
+      <p>In an era when women of lower castes were forbidden from covering their upper bodies in public, Guru took a radical stand for women's dignity and rights.</p>
+      <p style="margin-top:1rem;">He composed <strong>Janani Panchakam</strong> (Five Verses on the Mother) celebrating the divine feminine — recognising women as embodiments of the goddess, deserving of highest respect.</p>
+      <div class="quote-block">
+        <div class="original">ജനനി ജനനി ദേവ ജനനി</div>
+        <div class="translation">"Mother, Mother, Divine Mother — you are the source of all creation"</div>
+      </div>
+      <p style="margin-top:1rem;">He strongly supported women's education and fought against the objectification and oppression of women in the name of caste tradition.</p>
+    </div>
+
+    <!-- In Multiple Languages -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Key Teachings in Multiple Languages</h2>
+    </div>
+
+    <div class="lang-tabs fade-in" id="teachingLangTabs">
+      <span class="lang-tab active" onclick="showTeachingLang('en')">English</span>
+      <span class="lang-tab" onclick="showTeachingLang('ml')">മലയാളം</span>
+      <span class="lang-tab" onclick="showTeachingLang('ta')">தமிழ்</span>
+      <span class="lang-tab" onclick="showTeachingLang('hi')">हिन्दी</span>
+    </div>
+
+    <div id="teachingLang-en" class="teaching-section fade-in">
+      <h3>Core Teachings (English)</h3>
+      <ul style="color:var(--text); line-height:2; list-style:disc; padding-left:2rem;">
+        <li>One Caste, One Religion, One God for Humanity</li>
+        <li>Whatever religion a person follows, it is enough if they become a good human being</li>
+        <li>God is everywhere — in the temple, in the mosque, in the church</li>
+        <li>Educate yourself; organise; through industry achieve prosperity</li>
+        <li>Do not ask, do not oppress, do not destroy — for others, ask, help, and guide</li>
+        <li>Humans should not harm humans — this is the essence of all dharma</li>
+        <li>There is only one caste — that is humanity</li>
+      </ul>
+    </div>
+
+    <div id="teachingLang-ml" class="teaching-section fade-in" style="display:none;">
+      <h3>പ്രധാന ഉപദേശങ്ങൾ (Malayalam)</h3>
+      <ul style="color:var(--text); line-height:2.5; list-style:disc; padding-left:2rem; font-family:'Noto Sans Malayalam',sans-serif;">
+        <li>ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</li>
+        <li>ഏത് മതം ആചരിച്ചാലും നല്ല മനുഷ്യനായാൽ മതി</li>
+        <li>ദൈവം എവിടെയും ഉണ്ട് — ക്ഷേത്രത്തിലും മസ്ജിദിലും പള്ളിയിലും</li>
+        <li>വിദ്യകൊണ്ട് സ്വതന്ത്രരാകുക; സംഘടിക്കുക; തൊഴിൽകൊണ്ട് ഐശ്വര്യം നേടുക</li>
+        <li>ചോദിക്കൊല്ലൂ, ഉപദ്രവിക്കൊല്ലൂ, നശിപ്പിക്കൊല്ലൂ</li>
+        <li>മനുഷ്യർ മനുഷ്യരെ ഹിംസിക്കരുത് — ഇതാണ് ധർമ്മത്തിന്റെ സാരം</li>
+        <li>ഒരേ ഒരു ജാതിയേ ഉള്ളൂ — അത് മനുഷ്യജാതി</li>
+      </ul>
+    </div>
+
+    <div id="teachingLang-ta" class="teaching-section fade-in" style="display:none;">
+      <h3>முக்கிய போதனைகள் (Tamil)</h3>
+      <ul style="color:var(--text); line-height:2.5; list-style:disc; padding-left:2rem;">
+        <li>ஒரு சாதி ஒரு மதம் ஒரு தெய்வம் மனிதன்</li>
+        <li>எந்த மதத்தை கடைபிடித்தாலும் நல்ல மனிதனானால் போதும்</li>
+        <li>கடவுள் எங்கும் இருக்கிறார் — கோவிலிலும் மசூதியிலும் தேவாலயத்திலும்</li>
+        <li>கல்வியால் சுதந்திரம் அடைக; ஒன்றிணைக; தொழிலால் செழிப்பை நாடுக</li>
+        <li>கேட்காதீர்கள், துன்புறுத்தாதீர்கள், அழிக்காதீர்கள்</li>
+        <li>மனிதர்கள் மனிதர்களை துன்புறுத்தக்கூடாது — இதுவே அனைத்து தர்மங்களின் சாரம்</li>
+        <li>ஒரே ஒரு சாதி மட்டுமே உள்ளது — அது மனிதகுலம்</li>
+      </ul>
+    </div>
+
+    <div id="teachingLang-hi" class="teaching-section fade-in" style="display:none;">
+      <h3>मुख्य उपदेश (Hindi)</h3>
+      <ul style="color:var(--text); line-height:2.5; list-style:disc; padding-left:2rem;">
+        <li>एक जाति, एक धर्म, एक ईश्वर — मानव के लिए</li>
+        <li>चाहे कोई भी धर्म माने, अच्छा इंसान बनना काफी है</li>
+        <li>ईश्वर सर्वत्र है — मंदिर में, मस्जिद में, गिरजाघर में</li>
+        <li>शिक्षा से स्वतंत्र बनो; संगठित हो; उद्योग से समृद्धि प्राप्त करो</li>
+        <li>मत मांगो, मत सताओ, मत नष्ट करो</li>
+        <li>मनुष्य को मनुष्य को कष्ट नहीं देना चाहिए — यही सभी धर्मों का सार है</li>
+        <li>केवल एक जाति है — वह है मानव जाति</li>
+      </ul>
+    </div>
+
+    <!-- Meeting with Gandhi -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">Guru and Mahatma Gandhi</h2>
+    </div>
+
+    <div class="teaching-section fade-in">
+      <p>When Mahatma Gandhi visited Sree Narayana Guru at Sivagiri in 1925, he was deeply moved by the Guru's presence and teachings. Gandhi later declared:</p>
+      <div class="quote-block">
+        <div class="translation">"I have met many saints and holy men, but I have never felt the presence of God as I did with Sree Narayana Guru. He is a saint for the whole of humanity."</div>
+      </div>
+      <p style="margin-top:1rem;">Gandhi also noted that what Guru had achieved through spiritual force in Kerala was what the Indian independence movement was striving to achieve politically for the whole nation — the end of caste discrimination and the recognition of the equal dignity of all human beings.</p>
+      <p style="margin-top:1rem;">The meeting between these two giants of Indian reform was a recognition that the spiritual and the social were inseparable — that true liberation had to be both inner and outer, both personal and political.</p>
+    </div>
+
+    <!-- Legacy of Teachings -->
+    <div class="section-header fade-in" style="margin-top:3rem;">
+      <h2 class="section-title">The Living Legacy</h2>
+    </div>
+
+    <div class="principle-grid fade-in">
+      <div class="principle-card">
+        <div class="principle-number">📚</div>
+        <h4>Educational Revolution</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Guru's emphasis on education transformed Kerala into one of India's most literate states. The schools and colleges he founded educated generations who went on to build modern Kerala.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">🏛️</div>
+        <h4>Constitutional Values</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">Many of Guru's core teachings — equality, fraternity, secularism, social justice — found their way into the Indian Constitution, shaped by Dr. B.R. Ambedkar who admired Guru's work.</p>
+      </div>
+      <div class="principle-card">
+        <div class="principle-number">🌍</div>
+        <h4>Global Relevance</h4>
+        <p style="color:var(--text-muted); font-size:0.9rem;">In an era of rising religious nationalism and social division, Guru's teaching of "one caste, one religion, one God" carries a message that transcends time and geography.</p>
+      </div>
+    </div>
+
+    <div class="nav-cards-section fade-in">
+      <a href="philosophy.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🧘</span>
+          <h4>Philosophy</h4>
+          <p>Advaita and metaphysics</p>
+        </div>
+      </a>
+      <a href="atmopadesa-satakam.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">📜</span>
+          <h4>Atmopadesa Satakam</h4>
+          <p>100 Verses of Self-Instruction</p>
+        </div>
+      </a>
+      <a href="kritis.html" class="nav-card-link">
+        <div class="nav-card">
+          <span class="nav-card-icon">🎵</span>
+          <h4>Kritis & Works</h4>
+          <p>All literary compositions</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-om">ॐ</p>
+    <p class="footer-tagline">ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്</p>
+    <p class="footer-tagline-en">One Caste, One Religion, One God for Humanity</p>
+    <p class="footer-copy">© 2024 Sivagiri Ashram | sivagiriashram.com</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+function showTeachingLang(lang) {
+  ['en','ml','ta','hi'].forEach(l => {
+    document.getElementById('teachingLang-' + l).style.display = l === lang ? 'block' : 'none';
+  });
+  document.querySelectorAll('#teachingLangTabs .lang-tab').forEach((tab, i) => {
+    tab.classList.toggle('active', ['en','ml','ta','hi'][i] === lang);
+  });
+}
+</script>
+</body>
+</html>
