@@ -1,0 +1,77 @@
+{
+  "_comment": "Places connected with the Guru. Coordinates are approximate and should be checked before launch. Visiting details (timings, festival dates) are deliberately left blank rather than guessed — fill them in from the institutions themselves.",
+  "places": [
+    {
+      "id": "sivagiri",
+      "nameEn": "Sivagiri, Varkala",
+      "nameMl": "ശിവഗിരി, വർക്കല",
+      "lat": 8.7379,
+      "lng": 76.7163,
+      "district": "Thiruvananthapuram",
+      "summaryEn": "The hill where he settled in 1904, where the Sarada Mutt was consecrated in 1912 and where he died in 1928. The centre of the annual pilgrimage that begins at the end of December.",
+      "summaryMl": "1904-ൽ ഗുരു താമസമാക്കിയ കുന്ന്. 1912-ൽ ശാരദാ മഠം പ്രതിഷ്ഠിച്ചതും 1928-ൽ സമാധിയായതും ഇവിടെ. ഡിസംബർ അവസാനം തുടങ്ങുന്ന വാർഷിക തീർഥാടനത്തിന്റെ കേന്ദ്രം.",
+      "visitingEn": "",
+      "festivalEn": "Sivagiri pilgrimage, late December to early January. Confirm dates with the Mutt."
+    },
+    {
+      "id": "aruvippuram",
+      "nameEn": "Aruvippuram",
+      "nameMl": "അരുവിപ്പുറം",
+      "lat": 8.3869,
+      "lng": 77.1189,
+      "district": "Thiruvananthapuram",
+      "summaryEn": "On the Neyyar river, where in 1888 he consecrated a stone from the riverbed as Siva. The inscription there asks for a model place where people live as brothers without division of caste or enmity of religion.",
+      "summaryMl": "നെയ്യാറിന്റെ തീരത്ത്, 1888-ൽ ആറ്റിൽ നിന്നെടുത്ത ശില ശിവനായി പ്രതിഷ്ഠിച്ച സ്ഥലം. ജാതിഭേദവും മതദ്വേഷവുമില്ലാതെ മനുഷ്യർ സോദരത്വേന വാഴുന്ന മാതൃകാസ്ഥാനമാണിത് എന്ന ലിഖിതം ഇവിടെയുണ്ട്.",
+      "visitingEn": "",
+      "festivalEn": "Sivaratri. Confirm dates locally."
+    },
+    {
+      "id": "aluva",
+      "nameEn": "Advaita Ashram, Aluva",
+      "nameMl": "അദ്വൈതാശ്രമം, ആലുവ",
+      "lat": 10.1081,
+      "lng": 76.3522,
+      "district": "Ernakulam",
+      "summaryEn": "Founded in 1913 on the bank of the Periyar as a school of study open to all. Daiva Dasakam was written for the children here, and the All Religions Conference was held here.",
+      "summaryMl": "1913-ൽ പെരിയാറിന്റെ തീരത്ത് എല്ലാവർക്കുമായി സ്ഥാപിച്ച പഠനകേന്ദ്രം. ഇവിടത്തെ കുട്ടികൾക്കായാണ് ദൈവദശകം രചിച്ചത്. സർവമത സമ്മേളനവും ഇവിടെ നടന്നു.",
+      "visitingEn": "",
+      "festivalEn": ""
+    },
+    {
+      "id": "chempazhanthy",
+      "nameEn": "Chempazhanthy",
+      "nameMl": "ചെമ്പഴന്തി",
+      "lat": 8.5641,
+      "lng": 76.9089,
+      "district": "Thiruvananthapuram",
+      "summaryEn": "His birthplace, about twelve kilometres from Thiruvananthapuram. The family house, Vayalvaram Veedu, is preserved.",
+      "summaryMl": "ഗുരുവിന്റെ ജന്മസ്ഥലം, തിരുവനന്തപുരത്തു നിന്ന് ഏകദേശം പന്ത്രണ്ടു കിലോമീറ്റർ. വയൽവാരം വീട് സംരക്ഷിക്കപ്പെട്ടിരിക്കുന്നു.",
+      "visitingEn": "",
+      "festivalEn": "Chathayam, his birth star, in August or September."
+    },
+    {
+      "id": "maruthwamala",
+      "nameEn": "Maruthwamala",
+      "nameMl": "മരുത്വാമല",
+      "lat": 8.1897,
+      "lng": 77.3819,
+      "district": "Kanyakumari, Tamil Nadu",
+      "summaryEn": "The hill where he meditated for several years in the Pillathadam cave during his years as a wandering ascetic.",
+      "summaryMl": "പരിവ്രാജക കാലത്ത് പിള്ളത്തടം ഗുഹയിൽ വർഷങ്ങളോളം ധ്യാനിച്ച മല.",
+      "visitingEn": "",
+      "festivalEn": ""
+    },
+    {
+      "id": "vaikom",
+      "nameEn": "Vaikom",
+      "nameMl": "വൈക്കം",
+      "lat": 9.7489,
+      "lng": 76.3931,
+      "district": "Kottayam",
+      "summaryEn": "Where the 1924 to 1925 satyagraha for the right to walk the roads around the temple took place, which he supported and which brought Gandhi to Kerala.",
+      "summaryMl": "ക്ഷേത്രവഴികളിൽ നടക്കാനുള്ള അവകാശത്തിനായി 1924-25 കാലത്ത് സത്യാഗ്രഹം നടന്ന സ്ഥലം. ഗുരു ഇതിനെ പിന്തുണച്ചു.",
+      "visitingEn": "",
+      "festivalEn": ""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "_comment": "Further reading and archives. Only items that genuinely exist and can be linked are listed. Add editions you hold physically with their ISBN.",
+  "sayings": [
+    {
+      "ml": "ഒരു ജാതി ഒരു മതം ഒരു ദൈവം മനുഷ്യന്",
+      "translit": "oru jāti oru matam oru daivam manuṣyanu",
+      "en": "One caste, one religion, one god for humankind.",
+      "sourceEn": "The best known of his sayings, carved and quoted everywhere in Kerala.",
+      "status": "verified"
+    },
+    {
+      "ml": "",
+      "translit": "",
+      "en": "Whatever the religion, it is enough that a person becomes good.",
+      "sourceEn": "Widely attributed. Malayalam original to be added from a printed edition.",
+      "status": "draft"
+    },
+    {
+      "ml": "",
+      "translit": "",
+      "en": "Ask not, say not, think not caste.",
+      "sourceEn": "Widely attributed. Malayalam original to be added from a printed edition.",
+      "status": "draft"
+    },
+    {
+      "ml": "",
+      "translit": "",
+      "en": "Strengthen through organisation, grow strong through education.",
+      "sourceEn": "Widely attributed, often rendered as 'organise and be strong, educate and be free'. Original wording to be confirmed.",
+      "status": "draft"
+    }
+  ],
+  "books": [
+    {
+      "titleEn": "The Word of the Guru",
+      "author": "Nataraja Guru",
+      "noteEn": "The standard exposition by his direct disciple, who founded the Narayana Gurukula.",
+      "url": "https://www.narayanagurukula.org/"
+    },
+    {
+      "titleEn": "Narayana Guru: Complete Works",
+      "author": "Muni Narayana Prasad (translation and commentary)",
+      "noteEn": "English translations with commentary, published by the Narayana Gurukula.",
+      "url": "https://www.narayanagurukula.org/"
+    },
+    {
+      "titleEn": "Sree Narayana Guru: Life and works",
+      "author": "Sree Narayana Guru Mission",
+      "noteEn": "The catalogue of works with dates and verse counts that this site's work list follows.",
+      "url": "https://sngm.org/index.php/guru/works-of-guru/works-of-narayana-guru"
+    }
+  ],
+  "archives": [
+    {
+      "titleEn": "Narayana Guru Digital Research Resource Platform",
+      "noteEn": "A digitisation project led by IIT Bombay with the Sree Narayana Mandira Samity, Mumbai and others. Around 270,000 scanned pages, including the magazines Vivekodayam, Mitavadi, Sahodaran, Dharmam and Yuktivadi. Part of the collection is on JSTOR through South Asia Open Archives.",
+      "url": "https://www.jstor.org/site/south-asia-open-archives/"
+    },
+    {
+      "titleEn": "Kerala Tourism: Sree Narayana Guru",
+      "noteEn": "A government portal with sections on his life, philosophy and literary works, in English and Malayalam.",
+      "url": "https://www.keralatourism.org/sreenarayanaguru/"
+    },
+    {
+      "titleEn": "Narayana Gurukula",
+      "noteEn": "The lineage founded by Nataraja Guru. Publications, commentaries and study material.",
+      "url": "https://www.narayanagurukula.org/"
+    }
+  ]
+}

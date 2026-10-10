@@ -1,0 +1,64 @@
+{
+  "_comment": "Learning paths. Each lesson links to a work id and a verse range. Lessons whose work has no text yet will render with a 'text coming' state rather than a broken page.",
+  "paths": [
+    {
+      "id": "meet-the-guru",
+      "titleEn": "Meet the Guru",
+      "titleMl": "ഗുരുവിനെ അറിയാം",
+      "audienceEn": "New here",
+      "audienceMl": "പുതുതായി വരുന്നവർക്ക്",
+      "durationEn": "About 15 minutes",
+      "summaryEn": "A short introduction to his life, what he changed in Kerala, and the three works to hear first.",
+      "summaryMl": "ഗുരുവിന്റെ ജീവിതം, കേരളത്തിൽ അദ്ദേഹം വരുത്തിയ മാറ്റം, ആദ്യം കേൾക്കേണ്ട മൂന്നു കൃതികൾ.",
+      "lessons": [
+        { "titleEn": "Who he was", "titleMl": "ആരായിരുന്നു അദ്ദേഹം", "kind": "reading", "work": "", "bodyEn": "From Nanu Asan the village teacher to the man who changed how Kerala thought about caste." },
+        { "titleEn": "Aruvippuram, 1888", "titleMl": "അരുവിപ്പുറം, 1888", "kind": "reading", "work": "", "bodyEn": "What happened at the river, and why one sentence about an Ezhava Siva mattered so much." },
+        { "titleEn": "Daiva Dasakam", "titleMl": "ദൈവദശകം", "kind": "listen", "work": "daiva-dasakam", "bodyEn": "The prayer written for children, which names no god in particular." },
+        { "titleEn": "One caste, one religion", "titleMl": "ഒരു ജാതി, ഒരു മതം", "kind": "reading", "work": "jati-mimamsa", "bodyEn": "What the famous line actually argues, and what it does not say." },
+        { "titleEn": "Check what you remember", "titleMl": "ഓർമ പരിശോധിക്കാം", "kind": "quiz", "work": "", "bodyEn": "Five questions on the life and the message." }
+      ]
+    },
+    {
+      "id": "atmopadesa-course",
+      "titleEn": "Atmopadesa Satakam, verse by verse",
+      "titleMl": "ആത്മോപദേശശതകം, ശ്ലോകം ശ്ലോകമായി",
+      "audienceEn": "Study",
+      "audienceMl": "ആഴത്തിൽ പഠിക്കാൻ",
+      "durationEn": "20 sessions, about 20 minutes each",
+      "summaryEn": "The hundred verses taken five at a time. Each session has the audio, the text, a plain-language meaning, one question to sit with, and a short check.",
+      "summaryMl": "നൂറു ശ്ലോകങ്ങൾ അഞ്ചു വീതം. ഓരോ സെഷനിലും ശബ്ദം, പാഠം, ലളിതമായ അർഥം, ചിന്തിക്കാൻ ഒരു ചോദ്യം, ഒരു ഹ്രസ്വ പരിശോധന.",
+      "generated": { "work": "atmopadesa-satakam", "versesPerLesson": 5, "count": 20 }
+    },
+    {
+      "id": "classroom",
+      "titleEn": "Classroom pack",
+      "titleMl": "ക്ലാസ് മുറി സാമഗ്രികൾ",
+      "audienceEn": "Teachers and schools",
+      "audienceMl": "അധ്യാപകർക്കും വിദ്യാലയങ്ങൾക്കും",
+      "durationEn": "Free to print and share",
+      "summaryEn": "Assembly readings, worksheets, lesson plans and quizzes in Malayalam and English.",
+      "summaryMl": "അസംബ്ലി വായനകൾ, വർക്ക്ഷീറ്റുകൾ, പാഠ പദ്ധതികൾ, ക്വിസുകൾ, മലയാളത്തിലും ഇംഗ്ലീഷിലും.",
+      "resources": [
+        { "titleEn": "Assembly readings", "titleMl": "അസംബ്ലി വായനകൾ", "bodyEn": "One-page readings with a short talk, one for each week of term.", "file": "" },
+        { "titleEn": "Worksheets by age group", "titleMl": "പ്രായമനുസരിച്ചുള്ള വർക്ക്ഷീറ്റുകൾ", "bodyEn": "Printable activities with answer keys.", "file": "" },
+        { "titleEn": "Lesson plans", "titleMl": "പാഠ പദ്ധതികൾ", "bodyEn": "Forty-minute plans linking verses to questions children actually ask.", "file": "" },
+        { "titleEn": "Slide decks", "titleMl": "സ്ലൈഡുകൾ", "bodyEn": "Editable decks on the life, the reforms and the major works.", "file": "" },
+        { "titleEn": "Stories for children", "titleMl": "കുട്ടികൾക്കുള്ള കഥകൾ", "bodyEn": "Illustrated stories from his life, with audio to read along.", "file": "" },
+        { "titleEn": "Quiz bank", "titleMl": "ക്വിസ് ശേഖരം", "bodyEn": "Self-marking quizzes for each work and for the timeline.", "file": "" }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "life-basics",
+      "titleEn": "The life: five questions",
+      "questions": [
+        { "q": "In which year did the Guru consecrate the Siva idol at Aruvippuram?", "options": ["1856", "1888", "1903", "1924"], "answer": 1, "why": "The consecration took place in 1888, on Sivaratri." },
+        { "q": "What was Daiva Dasakam written for?", "options": ["A temple festival", "The evening prayer of children at the Aluva ashram", "A court petition", "The SNDP anniversary"], "answer": 1, "why": "He wrote it for the children at the Advaita Ashram in Aluva, around 1914." },
+        { "q": "Which organisation was founded in 1903 with the Guru as president?", "options": ["The Travancore Labour Association", "The Advaita Ashram", "The SNDP Yogam", "The Sivagiri Mutt"], "answer": 2, "why": "The Sree Narayana Dharma Paripalana Yogam was registered on 15 May 1903." },
+        { "q": "Which deity did he consecrate at the Sarada Mutt in Sivagiri?", "options": ["Siva", "Subrahmanya", "Saraswati", "Bhadrakali"], "answer": 2, "why": "He consecrated Saraswati, the goddess of learning, in 1912." },
+        { "q": "What was the stated purpose of the All Religions Conference at Aluva?", "options": ["To argue and to win", "To know and to make known", "To merge all religions", "To choose one religion"], "answer": 1, "why": "The conference motto was that it met not to argue and win, but to know and to make known." }
+      ]
+    }
+  ]
+}

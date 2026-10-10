@@ -1,0 +1,169 @@
+{
+  "_comment": "Life events. Dates follow the Wikipedia article on Narayana Guru and the Sree Narayana Guru Mission account, cross-checked where they agree. Where sources disagree, 'note' says so. Please verify against a printed biography before launch.",
+  "events": [
+    {
+      "year": "1856",
+      "date": "20 August 1856",
+      "titleEn": "Born at Chempazhanthy",
+      "titleMl": "ചെമ്പഴന്തിയിൽ ജനനം",
+      "bodyEn": "Born to Madan Asan and Kuttiyamma in Chempazhanthy, near Thiruvananthapuram, into an Ezhava family of ayurvedic physicians. The family called him Nanu.",
+      "bodyMl": "തിരുവനന്തപുരത്തിനടുത്ത് ചെമ്പഴന്തിയിൽ മാടനാശാന്റെയും കുട്ടിയമ്മയുടെയും മകനായി ജനനം. വീട്ടിൽ നാണു എന്നു വിളിച്ചു.",
+      "place": "chempazhanthy",
+      "note": "Some sources give 1855."
+    },
+    {
+      "year": "1877",
+      "date": "c. 1877",
+      "titleEn": "Sanskrit study under Raman Pillai Asan",
+      "titleMl": "രാമൻപിള്ള ആശാന്റെ കീഴിൽ സംസ്കൃത പഠനം",
+      "bodyEn": "At about twenty-one he went to central Travancore to study Sanskrit, the Vedas and the Upanishads under Raman Pillai Asan at Karunagappally.",
+      "bodyMl": "ഇരുപത്തിയൊന്നാം വയസ്സിൽ കരുനാഗപ്പള്ളിയിൽ രാമൻപിള്ള ആശാന്റെ കീഴിൽ സംസ്കൃതവും വേദങ്ങളും ഉപനിഷത്തുകളും പഠിച്ചു.",
+      "place": ""
+    },
+    {
+      "year": "1881",
+      "date": "1881",
+      "titleEn": "Teaching at home, and the first writings",
+      "titleMl": "നാട്ടിൽ അധ്യാപനവും ആദ്യ രചനകളും",
+      "bodyEn": "He returned home when his father fell ill and started a village school, which earned him the name Nanu Asan. His earliest prose works, Chijjada Chintanam and Daiva Chintanam, belong to this year.",
+      "bodyMl": "അച്ഛന്റെ അസുഖത്തെത്തുടർന്ന് നാട്ടിൽ മടങ്ങിയെത്തി ഒരു കുടിപ്പള്ളിക്കൂടം തുടങ്ങി. നാണു ആശാൻ എന്ന പേര് ഇങ്ങനെ വന്നു. ചിജ്ജഡചിന്തനവും ദൈവചിന്തനവും ഈ വർഷത്തേതാണ്.",
+      "place": "chempazhanthy"
+    },
+    {
+      "year": "1880s",
+      "date": "1880s",
+      "titleEn": "Wandering years and the Maruthwamala cave",
+      "titleMl": "പരിവ്രാജക കാലവും മരുത്വാമല ഗുഹയും",
+      "bodyEn": "He travelled through Kerala and Tamil Nadu as a wandering ascetic, met Chattampi Swamikal, and learned yoga from Ayyavu Swamikal. He then meditated for several years at the Pillathadam cave on Maruthwamala.",
+      "bodyMl": "കേരളത്തിലും തമിഴ്‌നാട്ടിലും പരിവ്രാജകനായി സഞ്ചരിച്ചു. ചട്ടമ്പിസ്വാമികളെ കണ്ടുമുട്ടി, അയ്യാവു സ്വാമികളിൽ നിന്നു യോഗം പഠിച്ചു. പിന്നീട് മരുത്വാമലയിലെ പിള്ളത്തടം ഗുഹയിൽ വർഷങ്ങളോളം ധ്യാനത്തിൽ കഴിഞ്ഞു.",
+      "place": "maruthwamala"
+    },
+    {
+      "year": "1888",
+      "date": "1888",
+      "titleEn": "The consecration at Aruvippuram",
+      "titleMl": "അരുവിപ്പുറം പ്രതിഷ്ഠ",
+      "bodyEn": "On Sivaratri he took a stone from the Neyyar river and consecrated it as a Siva idol at Aruvippuram. Brahmins objected that he had no right to consecrate. His reply, that this was an Ezhava Siva, is the most quoted moment of his life. It broke the monopoly of the upper castes over consecration.",
+      "bodyMl": "ശിവരാത്രി നാളിൽ നെയ്യാറിൽ നിന്നെടുത്ത ശില അരുവിപ്പുറത്തു ശിവനായി പ്രതിഷ്ഠിച്ചു. പ്രതിഷ്ഠയ്ക്ക് അധികാരമില്ലെന്ന എതിർപ്പിന് 'നാം പ്രതിഷ്ഠിച്ചത് ഈഴവ ശിവനെയാണ്' എന്ന മറുപടി ചരിത്രമായി.",
+      "place": "aruvippuram",
+      "major": true
+    },
+    {
+      "year": "1897",
+      "date": "1897",
+      "titleEn": "Atmopadesa Satakam",
+      "titleMl": "ആത്മോപദേശശതകം",
+      "bodyEn": "He completed the hundred verses of self-instruction, written in Malayalam so that people without Sanskrit could read them.",
+      "bodyMl": "സംസ്കൃതം അറിയാത്തവർക്കും വായിക്കാനായി മലയാളത്തിൽ ആത്മോപദേശശതകം പൂർത്തിയാക്കി.",
+      "place": "",
+      "work": "atmopadesa-satakam"
+    },
+    {
+      "year": "1903",
+      "date": "15 May 1903",
+      "titleEn": "The SNDP Yogam is founded",
+      "titleMl": "എസ്.എൻ.ഡി.പി. യോഗം സ്ഥാപിതമായി",
+      "bodyEn": "The Sree Narayana Dharma Paripalana Yogam was registered, with the Guru as founder president and Kumaran Asan as its first secretary. It became the organised body behind the social reforms.",
+      "bodyMl": "ശ്രീനാരായണ ധർമ പരിപാലന യോഗം രജിസ്റ്റർ ചെയ്തു. ഗുരു സ്ഥാപക പ്രസിഡന്റും കുമാരനാശാൻ ആദ്യ സെക്രട്ടറിയുമായി.",
+      "place": "aruvippuram",
+      "major": true
+    },
+    {
+      "year": "1904",
+      "date": "1904",
+      "titleEn": "Sivagiri, and a free school",
+      "titleMl": "ശിവഗിരിയും സൗജന്യ വിദ്യാലയവും",
+      "bodyEn": "He moved to Sivagiri near Varkala and opened a school, free and open to children the existing schools would not admit.",
+      "bodyMl": "വർക്കലയ്ക്കടുത്ത് ശിവഗിരിയിലേക്കു മാറി. നിലവിലുള്ള വിദ്യാലയങ്ങൾ പ്രവേശിപ്പിക്കാത്ത കുട്ടികൾക്കായി സൗജന്യ വിദ്യാലയം തുടങ്ങി.",
+      "place": "sivagiri"
+    },
+    {
+      "year": "1912",
+      "date": "1912",
+      "titleEn": "The Sarada Mutt at Sivagiri",
+      "titleMl": "ശിവഗിരി ശാരദാ മഠം",
+      "bodyEn": "The Sarada Mutt was completed after seven years of building. He consecrated Saraswati there, placing learning at the centre of worship.",
+      "bodyMl": "ഏഴു വർഷത്തെ നിർമാണത്തിനു ശേഷം ശാരദാ മഠം പൂർത്തിയായി. വിദ്യയെ ആരാധനയുടെ കേന്ദ്രത്തിൽ പ്രതിഷ്ഠിച്ചുകൊണ്ട് ശാരദാ ദേവിയെ പ്രതിഷ്ഠിച്ചു.",
+      "place": "sivagiri"
+    },
+    {
+      "year": "1913",
+      "date": "1913",
+      "titleEn": "The Advaita Ashram at Aluva",
+      "titleMl": "ആലുവ അദ്വൈതാശ്രമം",
+      "bodyEn": "He founded the Advaita Ashram on the bank of the Periyar at Aluva as a place of study open to all, with the motto that it was dedicated to no caste or religion.",
+      "bodyMl": "പെരിയാറിന്റെ തീരത്ത് ആലുവയിൽ അദ്വൈതാശ്രമം സ്ഥാപിച്ചു. ജാതിമതഭേദമില്ലാതെ എല്ലാവർക്കുമായി തുറന്ന പഠനകേന്ദ്രം.",
+      "place": "aluva",
+      "major": true
+    },
+    {
+      "year": "1914",
+      "date": "1914",
+      "titleEn": "Daiva Dasakam and the verses on mercy",
+      "titleMl": "ദൈവദശകവും അനുകമ്പാ ശ്ലോകങ്ങളും",
+      "bodyEn": "He wrote Daiva Dasakam for the evening prayer of the children at Aluva, and in the same period Anukampa Dasakam, Jiva Karunya Panchakam and Jati Mimamsa.",
+      "bodyMl": "ആലുവയിലെ കുട്ടികളുടെ സന്ധ്യാ പ്രാർത്ഥനയ്ക്കായി ദൈവദശകം രചിച്ചു. അതേ കാലത്തു തന്നെ അനുകമ്പാദശകം, ജീവകാരുണ്യപഞ്ചകം, ജാതിമീമാംസ എന്നിവയും.",
+      "place": "aluva",
+      "work": "daiva-dasakam"
+    },
+    {
+      "year": "1916",
+      "date": "1916",
+      "titleEn": "Darsana Mala, and a meeting with Ramana Maharshi",
+      "titleMl": "ദർശനമാലയും രമണ മഹർഷിയുമായുള്ള കൂടിക്കാഴ്ചയും",
+      "bodyEn": "He composed Darsana Mala, his most systematic philosophical work, and was hosted by Ramana Maharshi at Tiruvannamalai.",
+      "bodyMl": "ഏറ്റവും ക്രമബദ്ധമായ ദാർശനിക കൃതിയായ ദർശനമാല രചിച്ചു. തിരുവണ്ണാമലയിൽ രമണ മഹർഷിയെ സന്ദർശിച്ചു.",
+      "place": "",
+      "work": "darsana-mala"
+    },
+    {
+      "year": "1922",
+      "date": "November 1922",
+      "titleEn": "Tagore at Sivagiri",
+      "titleMl": "ടാഗോർ ശിവഗിരിയിൽ",
+      "bodyEn": "Rabindranath Tagore visited him at Sivagiri. Tagore later said he had not met anyone spiritually greater anywhere in the world. In March of the same year the Travancore Labour Association, Kerala's first organised union, was formed at Alappuzha under his guidance.",
+      "bodyMl": "രബീന്ദ്രനാഥ് ടാഗോർ ശിവഗിരിയിൽ ഗുരുവിനെ സന്ദർശിച്ചു. അതേ വർഷം മാർച്ചിൽ ആലപ്പുഴയിൽ കേരളത്തിലെ ആദ്യ തൊഴിലാളി സംഘടനയായ തിരുവിതാംകൂർ ലേബർ അസോസിയേഷൻ രൂപീകരിച്ചു.",
+      "place": "sivagiri"
+    },
+    {
+      "year": "1924",
+      "date": "1924",
+      "titleEn": "The All Religions Conference at Aluva",
+      "titleMl": "ആലുവ സർവമത സമ്മേളനം",
+      "bodyEn": "He convened the first conference of its kind in India at the Aluva Advaita Ashram, with the stated purpose of knowing and making known, not of arguing and winning.",
+      "bodyMl": "ആലുവ അദ്വൈതാശ്രമത്തിൽ ഇന്ത്യയിലെ ആദ്യത്തെ സർവമത സമ്മേളനം വിളിച്ചുചേർത്തു. 'വാദിക്കാനും ജയിക്കാനുമല്ല, അറിയാനും അറിയിക്കാനും' എന്നായിരുന്നു ലക്ഷ്യം.",
+      "place": "aluva",
+      "major": true,
+      "note": "Wikipedia dates the conference to 1923; several other accounts give 1924. Verify before launch."
+    },
+    {
+      "year": "1925",
+      "date": "12 March 1925",
+      "titleEn": "Gandhi at Sivagiri",
+      "titleMl": "ഗാന്ധി ശിവഗിരിയിൽ",
+      "bodyEn": "Mahatma Gandhi visited him at Sivagiri during the Vaikom Satyagraha, and they spoke about caste, conversion and the one human species.",
+      "bodyMl": "വൈക്കം സത്യാഗ്രഹ കാലത്ത് മഹാത്മാ ഗാന്ധി ശിവഗിരിയിൽ ഗുരുവിനെ സന്ദർശിച്ചു.",
+      "place": "sivagiri",
+      "major": true
+    },
+    {
+      "year": "1928",
+      "date": "1928",
+      "titleEn": "The Sivagiri pilgrimage approved",
+      "titleMl": "ശിവഗിരി തീർഥാടനത്തിന് അംഗീകാരം",
+      "bodyEn": "He approved the plan for an annual pilgrimage to Sivagiri and set out its eight subjects: education, cleanliness, devotion to God, organisation, agriculture, trade, handicraft and technical training.",
+      "bodyMl": "വാർഷിക ശിവഗിരി തീർഥാടനത്തിന് അംഗീകാരം നൽകി. വിദ്യാഭ്യാസം, ശുചിത്വം, ഈശ്വരഭക്തി, സംഘടന, കൃഷി, കച്ചവടം, കൈത്തൊഴിൽ, സാങ്കേതിക പരിശീലനം എന്നീ എട്ടു വിഷയങ്ങൾ നിശ്ചയിച്ചു.",
+      "place": "sivagiri"
+    },
+    {
+      "year": "1928",
+      "date": "20 September 1928",
+      "titleEn": "Samadhi at Sivagiri",
+      "titleMl": "ശിവഗിരിയിൽ സമാധി",
+      "bodyEn": "He died at Sivagiri at the age of seventy-two. The first Sivagiri pilgrimage set out four years later.",
+      "bodyMl": "എഴുപത്തിരണ്ടാം വയസ്സിൽ ശിവഗിരിയിൽ സമാധിയായി. നാലു വർഷത്തിനു ശേഷം ആദ്യ ശിവഗിരി തീർഥാടനം നടന്നു.",
+      "place": "sivagiri",
+      "major": true
+    }
+  ]
+}
